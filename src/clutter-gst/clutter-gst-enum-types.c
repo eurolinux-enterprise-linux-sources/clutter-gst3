@@ -5,7 +5,6 @@
 
 /* enumerations from "./clutter-gst-types.h" */
 #include "./clutter-gst-types.h"
-
 GType
 clutter_gst_seek_flags_get_type (void)
 {

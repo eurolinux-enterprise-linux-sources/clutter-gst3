@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Clutter Gst 3.0.22
- Reference Manual: ClutterGstCameraDevice</title>
+<title>ClutterGstCameraDevice: Clutter Gst 3.0.26
+ Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
-<link rel="home" href="index.html" title="Clutter Gst 3.0.22 Reference Manual">
+<link rel="home" href="index.html" title="Clutter Gst 3.0.26 Reference Manual">
 <link rel="up" href="ch03.html" title="ClutterGst players">
 <link rel="prev" href="ClutterGstCamera.html" title="ClutterGstCamera">
 <link rel="next" href="ClutterGstCameraManager.html" title="ClutterGstCameraManager">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -94,7 +94,7 @@
 <tbody>
 <tr>
 <td class="property_type">
-<span class="type">GstElementFactory</span> *</td>
+<a href="../gstreamer/GstElementFactory.html#GstElementFactory-struct"><span class="type">GstElementFactory</span></a> *</td>
 <td class="property_name"><a class="link" href="ClutterGstCameraDevice.html#ClutterGstCameraDevice--element-factory" title="The “element-factory” property">element-factory</a></td>
 <td class="property_flags">Read / Write / Construct Only</td>
 </tr>
@@ -169,7 +169,7 @@ clutter_gst_camera_device_get_capture_resolution
 <p>Retrieve the current capture resolution being used by <em class="parameter"><code>device</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.4.9.2.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-device-get-capture-resolution.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -184,12 +184,12 @@ clutter_gst_camera_device_get_capture_resolution
 </tr>
 <tr>
 <td class="parameter_name"><p>width</p></td>
-<td class="parameter_description"><p> Pointer to store the current capture resolution width. </p></td>
+<td class="parameter_description"><p>Pointer to store the current capture resolution width. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>height</p></td>
-<td class="parameter_description"><p> Pointer to store the current capture resolution height. </p></td>
+<td class="parameter_description"><p>Pointer to store the current capture resolution height. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -204,7 +204,7 @@ clutter_gst_camera_device_get_name (<em class="parameter"><code><a class="link" 
 <p>Retrieve the name of the <em class="parameter"><code>device</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.4.9.3.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-device-get-name.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -219,8 +219,8 @@ clutter_gst_camera_device_get_name (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.4.9.3.6"></a><h4>Returns</h4>
-<p> the device name. </p>
+<a name="clutter-gst-camera-device-get-name.returns"></a><h4>Returns</h4>
+<p>the device name. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
@@ -232,7 +232,7 @@ clutter_gst_camera_device_get_node (<em class="parameter"><code><a class="link" 
 <p>Retrieve the node (location) of the <em class="parameter"><code>device</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.4.9.4.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-device-get-node.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -247,8 +247,8 @@ clutter_gst_camera_device_get_node (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.4.9.4.6"></a><h4>Returns</h4>
-<p> the device node. </p>
+<a name="clutter-gst-camera-device-get-node.returns"></a><h4>Returns</h4>
+<p>the device node. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
@@ -261,7 +261,7 @@ clutter_gst_camera_device_get_supported_resolutions
 <p>Retrieve the supported resolutions of the <em class="parameter"><code>device</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.4.9.5.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-device-get-supported-resolutions.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -276,8 +276,8 @@ clutter_gst_camera_device_get_supported_resolutions
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.4.9.5.6"></a><h4>Returns</h4>
-<p> an array of <a class="link" href="clutter-gst-Types.html#ClutterGstVideoResolution" title="struct ClutterGstVideoResolution"><span class="type">ClutterGstVideoResolution</span></a> with the
+<a name="clutter-gst-camera-device-get-supported-resolutions.returns"></a><h4>Returns</h4>
+<p>an array of <a class="link" href="clutter-gst-Types.html#ClutterGstVideoResolution" title="struct ClutterGstVideoResolution"><span class="type">ClutterGstVideoResolution</span></a> with the
 supported resolutions. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ClutterGst.VideoResolution]</span></p>
 </div>
@@ -293,7 +293,7 @@ clutter_gst_camera_device_set_capture_resolution
 <p>Set the capture resolution to be used by <em class="parameter"><code>device</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.4.9.6.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-device-set-capture-resolution.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -343,7 +343,7 @@ should not be accessed directly.</p>
 <a name="ClutterGstCameraDevice.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ClutterGstCameraDevice--element-factory"></a><h3>The <code class="literal">“element-factory”</code> property</h3>
-<pre class="programlisting">  “element-factory”          <span class="type">GstElementFactory</span> *</pre>
+<pre class="programlisting">  “element-factory”          <a href="../gstreamer/GstElementFactory.html#GstElementFactory-struct"><span class="type">GstElementFactory</span></a> *</pre>
 <p>The GstElementFactory for this device.</p>
 <p>Flags: Read / Write / Construct Only</p>
 </div>
@@ -376,7 +376,7 @@ user_function (<a class="link" href="ClutterGstCameraDevice.html" title="Clutter
 <p>The ::capture-resolution-changed signal is emitted whenever the value of
 clutter_gst_camera_device_get_capture_resolution changes.</p>
 <div class="refsect3">
-<a name="id-1.4.4.12.2.5"></a><h4>Parameters</h4>
+<a name="ClutterGstCameraDevice-capture-resolution-changed.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -412,7 +412,6 @@ clutter_gst_camera_device_get_capture_resolution changes.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

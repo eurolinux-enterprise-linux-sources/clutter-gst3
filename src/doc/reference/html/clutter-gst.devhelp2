@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
-<book xmlns="http://www.devhelp.net/book" title="Clutter Gst 3.0.22&#10; Reference Manual" link="index.html" author="" name="clutter-gst" version="2" language="c">
+<book xmlns="http://www.devhelp.net/book" title="Clutter Gst 3.0.26&#10; Reference Manual" link="index.html" author="" name="clutter-gst" version="2" language="c">
   <chapters>
     <sub name="Clutter Gst Overview" link="ch01.html"/>
     <sub name="Clutter content objects" link="ch02.html">
@@ -19,7 +18,7 @@
       <sub name="Video Sink" link="clutter-gst-Video-Sink.html"/>
     </sub>
     <sub name="ClutterGst utils" link="ch05.html">
-      <sub name="ClutterGstTypes" link="clutter-gst-Types.html"/>
+      <sub name="Types" link="clutter-gst-Types.html"/>
       <sub name="Utilities" link="clutter-gst-Utilities.html"/>
       <sub name="Versioning Macros" link="clutter-gst-Versioning-Macros.html"/>
     </sub>
@@ -208,12 +207,46 @@
     <keyword type="function" name="clutter_gst_init ()" link="clutter-gst-Utilities.html#clutter-gst-init"/>
     <keyword type="function" name="clutter_gst_init_with_args ()" link="clutter-gst-Utilities.html#clutter-gst-init-with-args" since="1.0"/>
     <keyword type="function" name="clutter_gst_create_video_sink ()" link="clutter-gst-Utilities.html#clutter-gst-create-video-sink" since="3.0"/>
+    <keyword type="macro" name="CLUTTER_GST_CHECK_VERSION()" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-CHECK-VERSION:CAPS"/>
     <keyword type="macro" name="CLUTTER_GST_MAJOR_VERSION" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-MAJOR-VERSION:CAPS"/>
     <keyword type="macro" name="CLUTTER_GST_MINOR_VERSION" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-MINOR-VERSION:CAPS"/>
     <keyword type="macro" name="CLUTTER_GST_MICRO_VERSION" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-MICRO-VERSION:CAPS"/>
     <keyword type="macro" name="CLUTTER_GST_VERSION" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-VERSION:CAPS"/>
-    <keyword type="macro" name="CLUTTER_GST_VERSION_HEX" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-VERSION-HEX:CAPS"/>
-    <keyword type="macro" name="CLUTTER_GST_CHECK_VERSION()" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-CHECK-VERSION:CAPS"/>
     <keyword type="macro" name="CLUTTER_GST_VERSION_S" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-VERSION-S:CAPS"/>
+    <keyword type="macro" name="CLUTTER_GST_VERSION_HEX" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-VERSION-HEX:CAPS"/>
+    <keyword type="constant" name="CLUTTER_GST_BUFFERING_MODE_STREAM" link="clutter-gst-Types.html#CLUTTER-GST-BUFFERING-MODE-STREAM:CAPS"/>
+    <keyword type="constant" name="CLUTTER_GST_BUFFERING_MODE_DOWNLOAD" link="clutter-gst-Types.html#CLUTTER-GST-BUFFERING-MODE-DOWNLOAD:CAPS"/>
+    <keyword type="constant" name="CLUTTER_GST_SEEK_FLAG_NONE" link="clutter-gst-Types.html#CLUTTER-GST-SEEK-FLAG-NONE:CAPS"/>
+    <keyword type="constant" name="CLUTTER_GST_SEEK_FLAG_ACCURATE" link="clutter-gst-Types.html#CLUTTER-GST-SEEK-FLAG-ACCURATE:CAPS"/>
+    <keyword type="member" name="ClutterGstPlayerIface.get-frame" link="ClutterGstPlayer.html#ClutterGstPlayerIface.get-frame"/>
+    <keyword type="member" name="ClutterGstPlayerIface.get-pipeline" link="ClutterGstPlayer.html#ClutterGstPlayerIface.get-pipeline"/>
+    <keyword type="member" name="ClutterGstPlayerIface.get-video-sink" link="ClutterGstPlayer.html#ClutterGstPlayerIface.get-video-sink"/>
+    <keyword type="member" name="ClutterGstPlayerIface.get-idle" link="ClutterGstPlayer.html#ClutterGstPlayerIface.get-idle"/>
+    <keyword type="member" name="ClutterGstPlayerIface.get-audio-volume" link="ClutterGstPlayer.html#ClutterGstPlayerIface.get-audio-volume"/>
+    <keyword type="member" name="ClutterGstPlayerIface.set-audio-volume" link="ClutterGstPlayer.html#ClutterGstPlayerIface.set-audio-volume"/>
+    <keyword type="member" name="ClutterGstPlayerIface.get-playing" link="ClutterGstPlayer.html#ClutterGstPlayerIface.get-playing"/>
+    <keyword type="member" name="ClutterGstPlayerIface.set-playing" link="ClutterGstPlayer.html#ClutterGstPlayerIface.set-playing"/>
+    <keyword type="member" name="ClutterGstPlayerIface.new-frame" link="ClutterGstPlayer.html#ClutterGstPlayerIface.new-frame"/>
+    <keyword type="member" name="ClutterGstPlayerIface.ready" link="ClutterGstPlayer.html#ClutterGstPlayerIface.ready"/>
+    <keyword type="member" name="ClutterGstPlayerIface.eos" link="ClutterGstPlayer.html#ClutterGstPlayerIface.eos"/>
+    <keyword type="member" name="ClutterGstPlayerIface.error" link="ClutterGstPlayer.html#ClutterGstPlayerIface.error"/>
+    <keyword type="member" name="ClutterGstPlayerIface.size-change" link="ClutterGstPlayer.html#ClutterGstPlayerIface.size-change"/>
+    <keyword type="member" name="ClutterGstPlaybackClass.should-buffer" link="ClutterGstPlayback.html#ClutterGstPlaybackClass.should-buffer"/>
+    <keyword type="member" name="ClutterGstVideoSinkClass.new-frame" link="clutter-gst-Video-Sink.html#ClutterGstVideoSinkClass.new-frame"/>
+    <keyword type="member" name="ClutterGstVideoSinkClass.pipeline-ready" link="clutter-gst-Video-Sink.html#ClutterGstVideoSinkClass.pipeline-ready"/>
+    <keyword type="member" name="ClutterGstVideoSinkClass.new-overlays" link="clutter-gst-Video-Sink.html#ClutterGstVideoSinkClass.new-overlays"/>
+    <keyword type="member" name="ClutterGstBox-struct.x1" link="clutter-gst-Types.html#ClutterGstBox-struct.x1"/>
+    <keyword type="member" name="ClutterGstBox-struct.y1" link="clutter-gst-Types.html#ClutterGstBox-struct.y1"/>
+    <keyword type="member" name="ClutterGstBox-struct.x2" link="clutter-gst-Types.html#ClutterGstBox-struct.x2"/>
+    <keyword type="member" name="ClutterGstBox-struct.y2" link="clutter-gst-Types.html#ClutterGstBox-struct.y2"/>
+    <keyword type="member" name="ClutterGstFrame-struct.resolution" link="clutter-gst-Types.html#ClutterGstFrame-struct.resolution"/>
+    <keyword type="member" name="ClutterGstFrame-struct.pipeline" link="clutter-gst-Types.html#ClutterGstFrame-struct.pipeline"/>
+    <keyword type="member" name="ClutterGstOverlay-struct.position" link="clutter-gst-Types.html#ClutterGstOverlay-struct.position"/>
+    <keyword type="member" name="ClutterGstOverlay-struct.pipeline" link="clutter-gst-Types.html#ClutterGstOverlay-struct.pipeline"/>
+    <keyword type="member" name="ClutterGstOverlays-struct.overlays" link="clutter-gst-Types.html#ClutterGstOverlays-struct.overlays"/>
+    <keyword type="member" name="ClutterGstVideoResolution.width" link="clutter-gst-Types.html#ClutterGstVideoResolution.width"/>
+    <keyword type="member" name="ClutterGstVideoResolution.height" link="clutter-gst-Types.html#ClutterGstVideoResolution.height"/>
+    <keyword type="member" name="ClutterGstVideoResolution.par-n" link="clutter-gst-Types.html#ClutterGstVideoResolution.par-n"/>
+    <keyword type="member" name="ClutterGstVideoResolution.par-d" link="clutter-gst-Types.html#ClutterGstVideoResolution.par-d"/>
   </functions>
 </book>

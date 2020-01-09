@@ -1,7 +1,5 @@
 #include "clutter-gst-marshal.h"
-
-#include	<glib-object.h>
-
+#include <glib-object.h>
 
 #ifdef G_ENABLE_DEBUG
 #define g_marshal_value_peek_boolean(v)  g_value_get_boolean (v)
@@ -49,7 +47,6 @@
 #define g_marshal_value_peek_variant(v)  (v)->data[0].v_pointer
 #endif /* !G_ENABLE_DEBUG */
 
-
 /* VOID:DOUBLE,DOUBLE (./clutter-gst-marshal.list:1) */
 void
 _clutter_gst_marshal_VOID__DOUBLE_DOUBLE (GClosure     *closure,
@@ -59,13 +56,13 @@ _clutter_gst_marshal_VOID__DOUBLE_DOUBLE (GClosure     *closure,
                                           gpointer      invocation_hint G_GNUC_UNUSED,
                                           gpointer      marshal_data)
 {
-  typedef void (*GMarshalFunc_VOID__DOUBLE_DOUBLE) (gpointer     data1,
-                                                    gdouble      arg_1,
-                                                    gdouble      arg_2,
-                                                    gpointer     data2);
-  GMarshalFunc_VOID__DOUBLE_DOUBLE callback;
-  GCClosure *cc = (GCClosure*) closure;
+  typedef void (*GMarshalFunc_VOID__DOUBLE_DOUBLE) (gpointer data1,
+                                                    gdouble arg1,
+                                                    gdouble arg2,
+                                                    gpointer data2);
+  GCClosure *cc = (GCClosure *) closure;
   gpointer data1, data2;
+  GMarshalFunc_VOID__DOUBLE_DOUBLE callback;
 
   g_return_if_fail (n_param_values == 3);
 
@@ -96,13 +93,13 @@ _clutter_gst_marshal_VOID__INT_INT (GClosure     *closure,
                                     gpointer      invocation_hint G_GNUC_UNUSED,
                                     gpointer      marshal_data)
 {
-  typedef void (*GMarshalFunc_VOID__INT_INT) (gpointer     data1,
-                                              gint         arg_1,
-                                              gint         arg_2,
-                                              gpointer     data2);
-  GMarshalFunc_VOID__INT_INT callback;
-  GCClosure *cc = (GCClosure*) closure;
+  typedef void (*GMarshalFunc_VOID__INT_INT) (gpointer data1,
+                                              gint arg1,
+                                              gint arg2,
+                                              gpointer data2);
+  GCClosure *cc = (GCClosure *) closure;
   gpointer data1, data2;
+  GMarshalFunc_VOID__INT_INT callback;
 
   g_return_if_fail (n_param_values == 3);
 
@@ -127,18 +124,18 @@ _clutter_gst_marshal_VOID__INT_INT (GClosure     *closure,
 /* BOOL:OBJECT (./clutter-gst-marshal.list:3) */
 void
 _clutter_gst_marshal_BOOLEAN__OBJECT (GClosure     *closure,
-                                      GValue       *return_value G_GNUC_UNUSED,
+                                      GValue       *return_value,
                                       guint         n_param_values,
                                       const GValue *param_values,
                                       gpointer      invocation_hint G_GNUC_UNUSED,
                                       gpointer      marshal_data)
 {
-  typedef gboolean (*GMarshalFunc_BOOLEAN__OBJECT) (gpointer     data1,
-                                                    gpointer     arg_1,
-                                                    gpointer     data2);
-  GMarshalFunc_BOOLEAN__OBJECT callback;
-  GCClosure *cc = (GCClosure*) closure;
+  typedef gboolean (*GMarshalFunc_BOOLEAN__OBJECT) (gpointer data1,
+                                                    gpointer arg1,
+                                                    gpointer data2);
+  GCClosure *cc = (GCClosure *) closure;
   gpointer data1, data2;
+  GMarshalFunc_BOOLEAN__OBJECT callback;
   gboolean v_return;
 
   g_return_if_fail (return_value != NULL);

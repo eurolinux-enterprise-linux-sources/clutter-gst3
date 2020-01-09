@@ -1,5 +1,5 @@
 Name:           clutter-gst3
-Version:        3.0.22
+Version:        3.0.26
 Release:        1%{?dist}
 Summary:        GStreamer integration library for Clutter
 
@@ -80,6 +80,10 @@ rm -rf %{buildroot}%{_libdir}/gstreamer-1.0/
 
 
 %changelog
+* Sun Mar 11 2018 Kalev Lember <klember@redhat.com> - 3.0.26-1
+- Update to 3.0.26
+- Resolves: #1569811
+
 * Tue Dec 06 2016 Kalev Lember <klember@redhat.com> - 3.0.22-1
 - Update to 3.0.22
 

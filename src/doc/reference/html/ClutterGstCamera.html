@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Clutter Gst 3.0.22
- Reference Manual: ClutterGstCamera</title>
+<title>ClutterGstCamera: Clutter Gst 3.0.26
+ Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
-<link rel="home" href="index.html" title="Clutter Gst 3.0.22 Reference Manual">
+<link rel="home" href="index.html" title="Clutter Gst 3.0.26 Reference Manual">
 <link rel="up" href="ch03.html" title="ClutterGst players">
 <link rel="prev" href="ClutterGstPlayer.html" title="ClutterGstPlayer">
 <link rel="next" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -110,7 +110,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">GstElement</span> *
+<a href="../gstreamer/GstElement.html#GstElement-struct"><span class="returnvalue">GstElement</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-get-filter" title="clutter_gst_camera_get_filter ()">clutter_gst_camera_get_filter</a> <span class="c_punctuation">()</span>
@@ -415,9 +415,8 @@ GStreamer will spawn threads to do its work, we want all the GL calls to
 happen in the same thread. Clutter-gst knows which thread it is by
 assuming this constructor is called from the Clutter thread.</div>
 <div class="refsect3">
-<a name="id-1.4.3.10.2.6"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-new.returns"></a><h4>Returns</h4>
 <p> the newly created camera actor</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -426,12 +425,6 @@ assuming this constructor is called from the Clutter thread.</div>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 clutter_gst_camera_get_brightness (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
                                    <em class="parameter"><code><span class="type">gdouble</span> *cur_value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.3.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -442,12 +435,6 @@ clutter_gst_camera_get_brightness_range
                                 <em class="parameter"><code><span class="type">gdouble</span> *min_value</code></em>,
                                 <em class="parameter"><code><span class="type">gdouble</span> *max_value</code></em>,
                                 <em class="parameter"><code><span class="type">gdouble</span> *default_value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.4.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -456,7 +443,7 @@ clutter_gst_camera_get_brightness_range
 clutter_gst_camera_get_camera_device (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>);</pre>
 <p>Retrieve the current selected camera device.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.5.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-get-camera-device.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -471,8 +458,8 @@ clutter_gst_camera_get_camera_device (<em class="parameter"><code><a class="link
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.5.6"></a><h4>Returns</h4>
-<p> The currently selected camera device. </p>
+<a name="clutter-gst-camera-get-camera-device.returns"></a><h4>Returns</h4>
+<p>The currently selected camera device. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
@@ -492,7 +479,7 @@ supported on <em class="parameter"><code>self</code></em>
 .
 See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-color-balance" title="clutter_gst_camera_supports_color_balance ()"><code class="function">clutter_gst_camera_supports_color_balance()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.6.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-get-color-balance-property.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -520,9 +507,8 @@ See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-colo
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.6.7"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-get-color-balance-property.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if successful, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -543,7 +529,7 @@ supported on <em class="parameter"><code>self</code></em>
 .
 See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-color-balance" title="clutter_gst_camera_supports_color_balance ()"><code class="function">clutter_gst_camera_supports_color_balance()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.7.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-get-color-balance-property-range.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -583,9 +569,8 @@ See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-colo
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.7.7"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-get-color-balance-property-range.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if successful, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -594,12 +579,6 @@ See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-colo
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 clutter_gst_camera_get_contrast (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
                                  <em class="parameter"><code><span class="type">gdouble</span> *cur_value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.8.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -609,21 +588,15 @@ clutter_gst_camera_get_contrast_range (<em class="parameter"><code><a class="lin
                                        <em class="parameter"><code><span class="type">gdouble</span> *min_value</code></em>,
                                        <em class="parameter"><code><span class="type">gdouble</span> *max_value</code></em>,
                                        <em class="parameter"><code><span class="type">gdouble</span> *default_value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.9.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="clutter-gst-camera-get-filter"></a><h3>clutter_gst_camera_get_filter ()</h3>
-<pre class="programlisting"><span class="returnvalue">GstElement</span> *
+<pre class="programlisting"><a href="../gstreamer/GstElement.html#GstElement-struct"><span class="returnvalue">GstElement</span></a> *
 clutter_gst_camera_get_filter (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>);</pre>
 <p>Retrieve the current filter being used.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.10.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-get-filter.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -638,8 +611,8 @@ clutter_gst_camera_get_filter (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.10.6"></a><h4>Returns</h4>
-<p> The current filter or <code class="literal">NULL</code> if none is set. </p>
+<a name="clutter-gst-camera-get-filter.returns"></a><h4>Returns</h4>
+<p>The current filter or <code class="literal">NULL</code> if none is set. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
@@ -655,7 +628,7 @@ supported on <em class="parameter"><code>self</code></em>
 .
 See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-gamma-correction" title="clutter_gst_camera_supports_gamma_correction ()"><code class="function">clutter_gst_camera_supports_gamma_correction()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.11.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-get-gamma.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -677,9 +650,8 @@ See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-gamm
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.11.7"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-get-gamma.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if successful, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -696,7 +668,7 @@ supported on <em class="parameter"><code>self</code></em>
 .
 See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-gamma-correction" title="clutter_gst_camera_supports_gamma_correction ()"><code class="function">clutter_gst_camera_supports_gamma_correction()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.12.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-get-gamma-range.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -728,9 +700,8 @@ See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-gamm
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.12.7"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-get-gamma-range.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if successful, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -739,12 +710,6 @@ See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-gamm
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 clutter_gst_camera_get_hue (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
                             <em class="parameter"><code><span class="type">gdouble</span> *cur_value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.13.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -754,12 +719,6 @@ clutter_gst_camera_get_hue_range (<em class="parameter"><code><a class="link" hr
                                   <em class="parameter"><code><span class="type">gdouble</span> *min_value</code></em>,
                                   <em class="parameter"><code><span class="type">gdouble</span> *max_value</code></em>,
                                   <em class="parameter"><code><span class="type">gdouble</span> *default_value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.14.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -767,12 +726,6 @@ clutter_gst_camera_get_hue_range (<em class="parameter"><code><a class="link" hr
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 clutter_gst_camera_get_saturation (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
                                    <em class="parameter"><code><span class="type">gdouble</span> *cur_value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.15.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -783,12 +736,6 @@ clutter_gst_camera_get_saturation_range
                                 <em class="parameter"><code><span class="type">gdouble</span> *min_value</code></em>,
                                 <em class="parameter"><code><span class="type">gdouble</span> *max_value</code></em>,
                                 <em class="parameter"><code><span class="type">gdouble</span> *default_value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.16.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -799,7 +746,7 @@ clutter_gst_camera_is_ready_for_capture
 <p>Check whether the <em class="parameter"><code>self</code></em>
  is ready for video/photo capture.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.17.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-is-ready-for-capture.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -814,10 +761,9 @@ clutter_gst_camera_is_ready_for_capture
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.17.6"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-is-ready-for-capture.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if <em class="parameter"><code>self</code></em>
 is ready for capture, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -828,7 +774,7 @@ clutter_gst_camera_is_recording_video (<em class="parameter"><code><a class="lin
 <p>Check whether the <em class="parameter"><code>self</code></em>
  is recording video.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.18.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-is-recording-video.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -843,10 +789,9 @@ clutter_gst_camera_is_recording_video (<em class="parameter"><code><a class="lin
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.18.6"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-is-recording-video.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if <em class="parameter"><code>self</code></em>
 is recording video, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -856,7 +801,7 @@ is recording video, <code class="literal">FALSE</code> otherwise</p>
 clutter_gst_camera_remove_filter (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>);</pre>
 <p>Remove the current filter, if any.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.19.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-remove-filter.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -871,9 +816,8 @@ clutter_gst_camera_remove_filter (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.19.6"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-remove-filter.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -882,12 +826,6 @@ clutter_gst_camera_remove_filter (<em class="parameter"><code><a class="link" hr
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 clutter_gst_camera_set_brightness (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
                                    <em class="parameter"><code><span class="type">gdouble</span> value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.20.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -897,7 +835,7 @@ clutter_gst_camera_set_camera_device (<em class="parameter"><code><a class="link
                                       <em class="parameter"><code><a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a> *device</code></em>);</pre>
 <p>Set the new active camera device.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.21.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-set-camera-device.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -919,9 +857,8 @@ clutter_gst_camera_set_camera_device (<em class="parameter"><code><a class="link
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.21.6"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-set-camera-device.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -943,7 +880,7 @@ supported on <em class="parameter"><code>self</code></em>
 .
 See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-color-balance" title="clutter_gst_camera_supports_color_balance ()"><code class="function">clutter_gst_camera_supports_color_balance()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.22.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-set-color-balance-property.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -970,9 +907,8 @@ See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-colo
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.22.7"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-set-color-balance-property.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if successful, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -981,23 +917,17 @@ See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-colo
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 clutter_gst_camera_set_contrast (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
                                  <em class="parameter"><code><span class="type">gdouble</span> value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.23.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="clutter-gst-camera-set-filter"></a><h3>clutter_gst_camera_set_filter ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 clutter_gst_camera_set_filter (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
-                               <em class="parameter"><code><span class="type">GstElement</span> *filter</code></em>);</pre>
+                               <em class="parameter"><code><a href="../gstreamer/GstElement.html#GstElement-struct"><span class="type">GstElement</span></a> *filter</code></em>);</pre>
 <p>Set the filter element to be used.
 Filters can be used for effects, image processing, etc.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.24.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-set-filter.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1012,16 +942,15 @@ Filters can be used for effects, image processing, etc.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>filter</p></td>
-<td class="parameter_description"><p>a <span class="type">GstElement</span> for the filter</p></td>
+<td class="parameter_description"><p>a <a href="../gstreamer/GstElement.html#GstElement-struct"><span class="type">GstElement</span></a> for the filter</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.24.6"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-set-filter.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1038,7 +967,7 @@ supported on <em class="parameter"><code>self</code></em>
 .
 See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-gamma-correction" title="clutter_gst_camera_supports_gamma_correction ()"><code class="function">clutter_gst_camera_supports_gamma_correction()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.25.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-set-gamma.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1060,9 +989,8 @@ See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-gamm
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.25.7"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-set-gamma.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if successful, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1071,23 +999,17 @@ See <a class="link" href="ClutterGstCamera.html#clutter-gst-camera-supports-gamm
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 clutter_gst_camera_set_hue (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
                             <em class="parameter"><code><span class="type">gdouble</span> value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.26.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="clutter-gst-camera-set-photo-profile"></a><h3>clutter_gst_camera_set_photo_profile ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 clutter_gst_camera_set_photo_profile (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
-                                      <em class="parameter"><code><span class="type">GstEncodingProfile</span> *profile</code></em>);</pre>
+                                      <em class="parameter"><code><a href="../gst-plugins-base-libs/GstEncodingProfile.html#GstEncodingProfile-struct"><span class="type">GstEncodingProfile</span></a> *profile</code></em>);</pre>
 <p>Set the encoding profile to be used for photo captures.
 The default profile saves photos as JPEG images.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.27.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-set-photo-profile.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1102,7 +1024,7 @@ The default profile saves photos as JPEG images.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>profile</p></td>
-<td class="parameter_description"><p>A <span class="type">GstEncodingProfile</span> to be used for photo captures.</p></td>
+<td class="parameter_description"><p>A <a href="../gst-plugins-base-libs/GstEncodingProfile.html#GstEncodingProfile-struct"><span class="type">GstEncodingProfile</span></a> to be used for photo captures.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1115,23 +1037,17 @@ The default profile saves photos as JPEG images.</p>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 clutter_gst_camera_set_saturation (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
                                    <em class="parameter"><code><span class="type">gdouble</span> value</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.3.10.28.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="clutter-gst-camera-set-video-profile"></a><h3>clutter_gst_camera_set_video_profile ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 clutter_gst_camera_set_video_profile (<em class="parameter"><code><a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera"><span class="type">ClutterGstCamera</span></a> *self</code></em>,
-                                      <em class="parameter"><code><span class="type">GstEncodingProfile</span> *profile</code></em>);</pre>
+                                      <em class="parameter"><code><a href="../gst-plugins-base-libs/GstEncodingProfile.html#GstEncodingProfile-struct"><span class="type">GstEncodingProfile</span></a> *profile</code></em>);</pre>
 <p>Set the encoding profile to be used for video recording.
 The default profile saves videos as Ogg/Theora videos.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.29.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-set-video-profile.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1146,7 +1062,7 @@ The default profile saves videos as Ogg/Theora videos.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>profile</p></td>
-<td class="parameter_description"><p>A <span class="type">GstEncodingProfile</span> to be used for video recording.</p></td>
+<td class="parameter_description"><p>A <a href="../gst-plugins-base-libs/GstEncodingProfile.html#GstEncodingProfile-struct"><span class="type">GstEncodingProfile</span></a> to be used for video recording.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1167,7 +1083,7 @@ This method requires that <em class="parameter"><code>self</code></em>
  is playing and ready for capture.</p>
 <p>The ::video-saved signal will be emitted when the video is saved.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.30.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-start-video-recording.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1182,7 +1098,7 @@ This method requires that <em class="parameter"><code>self</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>filename</p></td>
-<td class="parameter_description"><p> the name of the video file to where the
+<td class="parameter_description"><p>the name of the video file to where the
 recording will be saved. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> filename]</span></td>
 </tr>
@@ -1190,9 +1106,8 @@ recording will be saved. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.30.7"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-start-video-recording.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if the video recording was successfully started, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1204,7 +1119,7 @@ clutter_gst_camera_stop_video_recording
 <p>Stop recording video on the <em class="parameter"><code>self</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.31.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-stop-video-recording.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1228,7 +1143,7 @@ clutter_gst_camera_supports_color_balance
 <p>Check whether the <em class="parameter"><code>self</code></em>
  supports color balance.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.32.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-supports-color-balance.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1243,10 +1158,9 @@ clutter_gst_camera_supports_color_balance
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.32.6"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-supports-color-balance.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if <em class="parameter"><code>self</code></em>
 supports color balance, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1258,7 +1172,7 @@ clutter_gst_camera_supports_gamma_correction
 <p>Check whether the <em class="parameter"><code>self</code></em>
  supports gamma correction.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.33.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-supports-gamma-correction.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1273,10 +1187,9 @@ clutter_gst_camera_supports_gamma_correction
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.33.6"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-supports-gamma-correction.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if <em class="parameter"><code>self</code></em>
 supports gamma correction, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1292,7 +1205,7 @@ This method requires that <em class="parameter"><code>self</code></em>
  is playing and ready for capture.</p>
 <p>The ::photo-saved signal will be emitted when the video is saved.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.34.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-take-photo.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1307,7 +1220,7 @@ This method requires that <em class="parameter"><code>self</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>filename</p></td>
-<td class="parameter_description"><p> the name of the file to where the
+<td class="parameter_description"><p>the name of the file to where the
 photo will be saved. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> filename]</span></td>
 </tr>
@@ -1315,9 +1228,8 @@ photo will be saved. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.34.7"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-take-photo.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if the photo was successfully captured, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1331,7 +1243,7 @@ clutter_gst_camera_take_photo_pixbuf (<em class="parameter"><code><a class="link
 This method requires that <em class="parameter"><code>self</code></em>
  is playing and ready for capture.</p>
 <div class="refsect3">
-<a name="id-1.4.3.10.35.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-camera-take-photo-pixbuf.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1346,9 +1258,8 @@ This method requires that <em class="parameter"><code>self</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.3.10.35.6"></a><h4>Returns</h4>
+<a name="clutter-gst-camera-take-photo-pixbuf.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if the photo was successfully captured, <code class="literal">FALSE</code> otherwise</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -1389,7 +1300,7 @@ user_function (<a class="link" href="ClutterGstCamera.html" title="ClutterGstCam
                <span class="type">gpointer</span>          user_data)</pre>
 <p>The ::photo-saved signal is emitted when a photo was saved to disk.</p>
 <div class="refsect3">
-<a name="id-1.4.3.13.2.5"></a><h4>Parameters</h4>
+<a name="ClutterGstCamera-photo-saved.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1421,7 +1332,7 @@ user_function (<a class="link" href="ClutterGstCamera.html" title="ClutterGstCam
                <span class="type">gpointer</span>          user_data)</pre>
 <p>The ::photo-taken signal is emitted when a photo was taken.</p>
 <div class="refsect3">
-<a name="id-1.4.3.13.3.5"></a><h4>Parameters</h4>
+<a name="ClutterGstCamera-photo-taken.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1459,7 +1370,7 @@ user_function (<a class="link" href="ClutterGstCamera.html" title="ClutterGstCam
 <p>The ::ready-for-capture signal is emitted whenever the value of
 clutter_gst_camera_is_ready_for_capture changes.</p>
 <div class="refsect3">
-<a name="id-1.4.3.13.4.5"></a><h4>Parameters</h4>
+<a name="ClutterGstCamera-ready-for-capture.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1496,7 +1407,7 @@ user_function (<a class="link" href="ClutterGstCamera.html" title="ClutterGstCam
                <span class="type">gpointer</span>          user_data)</pre>
 <p>The ::video-saved signal is emitted when a video was saved to disk.</p>
 <div class="refsect3">
-<a name="id-1.4.3.13.5.5"></a><h4>Parameters</h4>
+<a name="ClutterGstCamera-video-saved.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1522,7 +1433,6 @@ user_function (<a class="link" href="ClutterGstCamera.html" title="ClutterGstCam
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

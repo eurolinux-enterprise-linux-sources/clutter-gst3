@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Clutter Gst 3.0.22
- Reference Manual: ClutterGstPlayer</title>
+<title>ClutterGstPlayer: Clutter Gst 3.0.26
+ Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
-<link rel="home" href="index.html" title="Clutter Gst 3.0.22 Reference Manual">
+<link rel="home" href="index.html" title="Clutter Gst 3.0.26 Reference Manual">
 <link rel="up" href="ch03.html" title="ClutterGst players">
 <link rel="prev" href="ch03.html" title="ClutterGst players">
 <link rel="next" href="ClutterGstCamera.html" title="ClutterGstCamera">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -55,7 +55,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">GstElement</span> *
+<a href="../gstreamer/GstElement.html#GstElement-struct"><span class="returnvalue">GstElement</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="ClutterGstPlayer.html#clutter-gst-player-get-pipeline" title="clutter_gst_player_get_pipeline ()">clutter_gst_player_get_pipeline</a> <span class="c_punctuation">()</span>
@@ -197,7 +197,7 @@
 </div>
 <div class="refsect1">
 <a name="ClutterGstPlayer.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GInterface
+<pre class="screen">    <a href="/home/djdeath/src/gnome-build/share/gtk-doc/html/gobject/GTypeModule.html">GInterface</a>
     <span class="lineart">╰──</span> ClutterGstPlayer
 </pre>
 </div>
@@ -227,7 +227,7 @@ clutter_gst_player_get_frame (<em class="parameter"><code><a class="link" href="
 <p>Retrieves the <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> of the last frame produced by <em class="parameter"><code>self</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.2.11.2.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-player-get-frame.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -242,22 +242,22 @@ clutter_gst_player_get_frame (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.2.11.2.6"></a><h4>Returns</h4>
-<p> the <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> of the last frame. </p>
+<a name="clutter-gst-player-get-frame.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> of the last frame. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 3.0</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="clutter-gst-player-get-pipeline"></a><h3>clutter_gst_player_get_pipeline ()</h3>
-<pre class="programlisting"><span class="returnvalue">GstElement</span> *
+<pre class="programlisting"><a href="../gstreamer/GstElement.html#GstElement-struct"><span class="returnvalue">GstElement</span></a> *
 clutter_gst_player_get_pipeline (<em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *self</code></em>);</pre>
-<p>Retrieves the <span class="type">GstPipeline</span> used by the <em class="parameter"><code>self</code></em>
+<p>Retrieves the <a href="../gstreamer/GstPipeline.html#GstPipeline-struct"><span class="type">GstPipeline</span></a> used by the <em class="parameter"><code>self</code></em>
 , for direct use with
 GStreamer API.</p>
 <div class="refsect3">
-<a name="id-1.4.2.11.3.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-player-get-pipeline.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -272,11 +272,11 @@ GStreamer API.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.2.11.3.6"></a><h4>Returns</h4>
-<p> the <span class="type">GstPipeline</span> element used by the player. </p>
+<a name="clutter-gst-player-get-pipeline.returns"></a><h4>Returns</h4>
+<p>the <a href="../gstreamer/GstPipeline.html#GstPipeline-struct"><span class="type">GstPipeline</span></a> element used by the player. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 3.0</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -286,7 +286,7 @@ clutter_gst_player_get_video_sink (<em class="parameter"><code><a class="link" h
 <p>Retrieves the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> used by the <em class="parameter"><code>self</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.2.11.4.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-player-get-video-sink.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -301,11 +301,11 @@ clutter_gst_player_get_video_sink (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.2.11.4.6"></a><h4>Returns</h4>
-<p> the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> element used by the player. </p>
+<a name="clutter-gst-player-get-video-sink.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> element used by the player. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 3.0</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -314,7 +314,7 @@ clutter_gst_player_get_video_sink (<em class="parameter"><code><a class="link" h
 clutter_gst_player_get_idle (<em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *self</code></em>);</pre>
 <p>Get the idle state of the pipeline.</p>
 <div class="refsect3">
-<a name="id-1.4.2.11.5.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-player-get-idle.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -329,11 +329,10 @@ clutter_gst_player_get_idle (<em class="parameter"><code><a class="link" href="C
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.2.11.5.6"></a><h4>Returns</h4>
+<a name="clutter-gst-player-get-idle.returns"></a><h4>Returns</h4>
 <p> TRUE if the pipline is in idle mode, FALSE otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 3.0</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -343,7 +342,7 @@ clutter_gst_player_get_playing (<em class="parameter"><code><a class="link" href
 <p>Retrieves the playing status of <em class="parameter"><code>self</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.2.11.6.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-player-get-playing.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -358,11 +357,10 @@ clutter_gst_player_get_playing (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.2.11.6.6"></a><h4>Returns</h4>
+<a name="clutter-gst-player-get-playing.returns"></a><h4>Returns</h4>
 <p> <code class="literal">TRUE</code> if playing, <code class="literal">FALSE</code> if stopped.</p>
-<p></p>
 </div>
-<p class="since">Since 3.0</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -379,7 +377,7 @@ signal on the <a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer--play
 current state with <a class="link" href="ClutterGstPlayer.html#clutter-gst-player-get-playing" title="clutter_gst_player_get_playing ()"><code class="function">clutter_gst_player_get_playing()</code></a>. ClutterGstVideoActor
 in clutter-gst is an example of such an asynchronous implementation.</p>
 <div class="refsect3">
-<a name="id-1.4.2.11.7.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-player-set-playing.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -400,7 +398,7 @@ in clutter-gst is an example of such an asynchronous implementation.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 3.0</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -410,7 +408,7 @@ clutter_gst_player_get_audio_volume (<em class="parameter"><code><a class="link"
 <p>Retrieves the playback volume of <em class="parameter"><code>self</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.2.11.8.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-player-get-audio-volume.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -425,11 +423,10 @@ clutter_gst_player_get_audio_volume (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.2.11.8.6"></a><h4>Returns</h4>
+<a name="clutter-gst-player-get-audio-volume.returns"></a><h4>Returns</h4>
 <p> The playback volume between 0.0 and 1.0</p>
-<p></p>
 </div>
-<p class="since">Since 3.0</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -441,7 +438,7 @@ clutter_gst_player_set_audio_volume (<em class="parameter"><code><a class="link"
  to <em class="parameter"><code>volume</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.2.11.9.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-player-set-audio-volume.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -462,7 +459,7 @@ clutter_gst_player_set_audio_volume (<em class="parameter"><code><a class="link"
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 3.0</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -472,7 +469,7 @@ clutter_gst_player_set_audio_volume (<em class="parameter"><code><a class="link"
 <pre class="programlisting">typedef struct _ClutterGstPlayer ClutterGstPlayer;</pre>
 <p><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> is an opaque structure whose members cannot be
 directly accessed</p>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -505,7 +502,7 @@ directly accessed</p>
 </pre>
 <p>Interface vtable for <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> implementations</p>
 <div class="refsect3">
-<a name="id-1.4.2.12.3.5"></a><h4>Members</h4>
+<a name="ClutterGstPlayerIface.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
@@ -581,7 +578,7 @@ directly accessed</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -602,7 +599,7 @@ directly accessed</p>
 <p>Whether the <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> is in idle mode.</p>
 <p>Flags: Read</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -622,7 +619,7 @@ user_function (<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPla
                <span class="type">gpointer</span>          user_data)</pre>
 <p>The ::eos signal is emitted each time the media stream ends.</p>
 <div class="refsect3">
-<a name="id-1.4.2.14.2.5"></a><h4>Parameters</h4>
+<a name="ClutterGstPlayer-eos.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -654,7 +651,7 @@ user_function (<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPla
                <span class="type">gpointer</span>          user_data)</pre>
 <p>The ::error signal is emitted each time an error occurred.</p>
 <div class="refsect3">
-<a name="id-1.4.2.14.3.5"></a><h4>Parameters</h4>
+<a name="ClutterGstPlayer-error.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -692,7 +689,7 @@ user_function (<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPla
 <p>The ::new-frame signal is emitted each time a frame is received
 from the video sink.</p>
 <div class="refsect3">
-<a name="id-1.4.2.14.4.5"></a><h4>Parameters</h4>
+<a name="ClutterGstPlayer-new-frame.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -729,7 +726,7 @@ user_function (<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPla
 <p>The ::ready signal is emitted each time the gstreamer pipeline
 becomes ready.</p>
 <div class="refsect3">
-<a name="id-1.4.2.14.5.5"></a><h4>Parameters</h4>
+<a name="ClutterGstPlayer-ready.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -763,7 +760,7 @@ user_function (<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPla
 <p>The ::size-change signal is emitted each time the new frame
 has different dimensions to the previous frame.</p>
 <div class="refsect3">
-<a name="id-1.4.2.14.6.5"></a><h4>Parameters</h4>
+<a name="ClutterGstPlayer-size-change.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -799,7 +796,6 @@ has different dimensions to the previous frame.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Clutter Gst 3.0.22
- Reference Manual: ClutterGstPlayback</title>
+<title>ClutterGstPlayback: Clutter Gst 3.0.26
+ Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
-<link rel="home" href="index.html" title="Clutter Gst 3.0.22 Reference Manual">
+<link rel="home" href="index.html" title="Clutter Gst 3.0.26 Reference Manual">
 <link rel="up" href="ch03.html" title="ClutterGst players">
 <link rel="prev" href="ClutterGstCameraManager.html" title="ClutterGstCameraManager">
 <link rel="next" href="ch04.html" title="ClutterGst sink">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -437,12 +437,6 @@ ClutterGstPlayback implements
 <a name="clutter-gst-playback-new"></a><h3>clutter_gst_playback_new ()</h3>
 <pre class="programlisting"><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="returnvalue">ClutterGstPlayback</span></a> *
 clutter_gst_playback_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.4.6.10.2.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -453,7 +447,7 @@ clutter_gst_playback_get_audio_stream (<em class="parameter"><code><a class="lin
 audio stream playing in the list returned by
 <a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-audio-streams" title="clutter_gst_playback_get_audio_streams ()"><code class="function">clutter_gst_playback_get_audio_streams()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.3.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-audio-stream.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -468,12 +462,11 @@ audio stream playing in the list returned by
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.3.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-audio-stream.returns"></a><h4>Returns</h4>
 <p> the index of the current audio stream, -1 if the media has no
 audio stream</p>
-<p></p>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -483,7 +476,7 @@ clutter_gst_playback_get_audio_streams
                                (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Get the list of audio streams of the current media.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.4.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-audio-streams.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -498,12 +491,12 @@ clutter_gst_playback_get_audio_streams
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.4.6"></a><h4>Returns</h4>
-<p> a list of
+<a name="clutter-gst-playback-get-audio-streams.returns"></a><h4>Returns</h4>
+<p>a list of
 strings describing the available audio streams. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> utf8]</span></p>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -513,7 +506,7 @@ clutter_gst_playback_get_buffer_duration
                                (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Retrieves the buffer duration when buffering network streams.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.5.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-buffer-duration.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -528,9 +521,8 @@ clutter_gst_playback_get_buffer_duration
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.5.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-buffer-duration.returns"></a><h4>Returns</h4>
 <p> The buffer duration</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -540,7 +532,7 @@ clutter_gst_playback_get_buffer_duration
 clutter_gst_playback_get_buffer_fill (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Retrieves the amount of the stream that is buffered.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.6.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-buffer-fill.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -555,9 +547,8 @@ clutter_gst_playback_get_buffer_fill (<em class="parameter"><code><a class="link
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.6.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-buffer-fill.returns"></a><h4>Returns</h4>
 <p> the fill level, between 0.0 and 1.0</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -567,7 +558,7 @@ clutter_gst_playback_get_buffer_fill (<em class="parameter"><code><a class="link
 clutter_gst_playback_get_buffering_mode
                                (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <div class="refsect3">
-<a name="id-1.4.6.10.7.4"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-buffering-mode.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -582,11 +573,10 @@ clutter_gst_playback_get_buffering_mode
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.7.5"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-buffering-mode.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="clutter-gst-Types.html#ClutterGstBufferingMode" title="enum ClutterGstBufferingMode"><span class="type">ClutterGstBufferingMode</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -595,7 +585,7 @@ clutter_gst_playback_get_buffering_mode
 clutter_gst_playback_get_buffer_size (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Retrieves the buffer size when buffering network streams.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.8.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-buffer-size.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -610,9 +600,8 @@ clutter_gst_playback_get_buffer_size (<em class="parameter"><code><a class="link
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.8.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-buffer-size.returns"></a><h4>Returns</h4>
 <p> The buffer size</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -623,7 +612,7 @@ clutter_gst_playback_get_duration (<em class="parameter"><code><a class="link" h
 <p>Retrieves the duration of the media stream that <em class="parameter"><code>self</code></em>
  represents.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.9.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-duration.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -638,9 +627,8 @@ clutter_gst_playback_get_duration (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.9.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-duration.returns"></a><h4>Returns</h4>
 <p> the duration of the media stream, in seconds</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -650,7 +638,7 @@ clutter_gst_playback_get_duration (<em class="parameter"><code><a class="link" h
 clutter_gst_playback_get_in_seek (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Whether the player is seeking.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.10.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-in-seek.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -665,11 +653,10 @@ clutter_gst_playback_get_in_seek (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.10.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-in-seek.returns"></a><h4>Returns</h4>
 <p> TRUE if the player is seeking, FALSE otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 1.6</p>
+<p class="since">Since: <a class="link" href="api-index-1-6.html#api-index-1.6">1.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -679,7 +666,7 @@ clutter_gst_playback_get_position (<em class="parameter"><code><a class="link" h
 <p>Retrieves the position in the media stream that <em class="parameter"><code>self</code></em>
  represents.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.11.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-position.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -694,9 +681,8 @@ clutter_gst_playback_get_position (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.11.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-position.returns"></a><h4>Returns</h4>
 <p> the position in the media stream, in seconds</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -707,7 +693,7 @@ clutter_gst_playback_get_progress (<em class="parameter"><code><a class="link" h
 <p>Retrieves the playback progress of <em class="parameter"><code>self</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.12.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-progress.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -722,9 +708,8 @@ clutter_gst_playback_get_progress (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.12.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-progress.returns"></a><h4>Returns</h4>
 <p> the playback progress, between 0.0 and 1.0</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -734,7 +719,7 @@ clutter_gst_playback_get_progress (<em class="parameter"><code><a class="link" h
 clutter_gst_playback_get_seek_flags (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Get the current value of the seek-flags property.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.13.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-seek-flags.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -749,11 +734,10 @@ clutter_gst_playback_get_seek_flags (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.13.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-seek-flags.returns"></a><h4>Returns</h4>
 <p> a combination of <a class="link" href="clutter-gst-Types.html#ClutterGstSeekFlags" title="enum ClutterGstSeekFlags"><span class="type">ClutterGstSeekFlags</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -763,7 +747,7 @@ clutter_gst_playback_get_subtitle_font_name
                                (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Retrieves the font name currently used.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.14.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-subtitle-font-name.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -778,10 +762,9 @@ clutter_gst_playback_get_subtitle_font_name
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.14.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-subtitle-font-name.returns"></a><h4>Returns</h4>
 <p> a string containing the font name. Use <code class="function">g_free()</code>
 to free the returned string</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -794,7 +777,7 @@ clutter_gst_playback_get_subtitle_track
 subtiles track in the list returned by
 <a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-tracks" title="clutter_gst_playback_get_subtitle_tracks ()"><code class="function">clutter_gst_playback_get_subtitle_tracks()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.15.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-subtitle-track.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -809,12 +792,11 @@ subtiles track in the list returned by
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.15.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-subtitle-track.returns"></a><h4>Returns</h4>
 <p> the index of the current subtitlest track, -1 if the media has
 no subtitles track or if the subtitles have been turned off</p>
-<p></p>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -824,7 +806,7 @@ clutter_gst_playback_get_subtitle_tracks
                                (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Get the list of subtitles tracks of the current media.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.16.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-subtitle-tracks.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -839,12 +821,12 @@ clutter_gst_playback_get_subtitle_tracks
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.16.6"></a><h4>Returns</h4>
-<p> a list of
+<a name="clutter-gst-playback-get-subtitle-tracks.returns"></a><h4>Returns</h4>
+<p>a list of
 strings describing the available subtitles tracks. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> utf8]</span></p>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -853,7 +835,7 @@ strings describing the available subtitles tracks. </p>
 clutter_gst_playback_get_subtitle_uri (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Retrieves the URI of the subtitle file in use.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.17.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-subtitle-uri.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -868,10 +850,9 @@ clutter_gst_playback_get_subtitle_uri (<em class="parameter"><code><a class="lin
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.17.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-subtitle-uri.returns"></a><h4>Returns</h4>
 <p> the URI of the subtitle file. Use <code class="function">g_free()</code>
 to free the returned string</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -882,7 +863,7 @@ clutter_gst_playback_get_uri (<em class="parameter"><code><a class="link" href="
 <p>Retrieves the URI from <em class="parameter"><code>self</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.18.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-uri.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -897,10 +878,9 @@ clutter_gst_playback_get_uri (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.18.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-uri.returns"></a><h4>Returns</h4>
 <p> the URI of the media stream. Use <code class="function">g_free()</code>
 to free the returned string</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -910,7 +890,7 @@ to free the returned string</p>
 clutter_gst_playback_get_user_agent (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Retrieves the user agent used when streaming.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.19.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-get-user-agent.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -925,12 +905,11 @@ clutter_gst_playback_get_user_agent (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.19.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-get-user-agent.returns"></a><h4>Returns</h4>
 <p> the user agent used. The returned string has to be freed with
 <code class="function">g_free()</code></p>
-<p></p>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -939,7 +918,7 @@ clutter_gst_playback_get_user_agent (<em class="parameter"><code><a class="link"
 clutter_gst_playback_is_live_media (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
 <p>Whether the player is using a live media.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.20.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-is-live-media.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -954,9 +933,8 @@ clutter_gst_playback_is_live_media (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.10.20.6"></a><h4>Returns</h4>
+<a name="clutter-gst-playback-is-live-media.returns"></a><h4>Returns</h4>
 <p> TRUE if the player is using a live media, FALSE otherwise.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -969,7 +947,7 @@ clutter_gst_playback_set_audio_stream (<em class="parameter"><code><a class="lin
  is the index of the stream
 in the list returned by <a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-audio-streams" title="clutter_gst_playback_get_audio_streams ()"><code class="function">clutter_gst_playback_get_audio_streams()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.21.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-audio-stream.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -990,7 +968,7 @@ in the list returned by <a class="link" href="ClutterGstPlayback.html#clutter-gs
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1001,7 +979,7 @@ clutter_gst_playback_set_buffer_duration
                                 <em class="parameter"><code><span class="type">gint64</span> duration</code></em>);</pre>
 <p>Sets the buffer duration to be used when buffering network streams.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.22.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-buffer-duration.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1031,7 +1009,7 @@ clutter_gst_playback_set_buffering_mode
                                (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
                                 <em class="parameter"><code><a class="link" href="clutter-gst-Types.html#ClutterGstBufferingMode" title="enum ClutterGstBufferingMode"><span class="type">ClutterGstBufferingMode</span></a> mode</code></em>);</pre>
 <div class="refsect3">
-<a name="id-1.4.6.10.23.4"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-buffering-mode.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1052,7 +1030,7 @@ clutter_gst_playback_set_buffering_mode
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1062,7 +1040,7 @@ clutter_gst_playback_set_buffer_size (<em class="parameter"><code><a class="link
                                       <em class="parameter"><code><span class="type">gint</span> size</code></em>);</pre>
 <p>Sets the buffer size to be used when buffering network streams.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.24.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-buffer-size.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1093,7 +1071,7 @@ clutter_gst_playback_set_filename (<em class="parameter"><code><a class="link" h
 <p>Sets the source of <em class="parameter"><code>self</code></em>
  using a file path.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.25.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-filename.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1126,7 +1104,7 @@ clutter_gst_playback_set_progress (<em class="parameter"><code><a class="link" h
  is
 a normalized value between 0.0 (begin) and 1.0 (end).</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.26.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-progress.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1157,7 +1135,7 @@ clutter_gst_playback_set_seek_flags (<em class="parameter"><code><a class="link"
 <p>Seeking can be done with several trade-offs. Clutter-gst defaults
 to <a class="link" href="clutter-gst-Types.html#CLUTTER-GST-SEEK-FLAG-NONE:CAPS"><code class="literal">CLUTTER_GST_SEEK_FLAG_NONE</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.27.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-seek-flags.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1178,7 +1156,7 @@ to <a class="link" href="clutter-gst-Types.html#CLUTTER-GST-SEEK-FLAG-NONE:CAPS"
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1192,20 +1170,12 @@ clutter_gst_playback_set_subtitle_font_name
 either <code class="literal">NULL</code>, which means that the default font name of the underlying
 implementation will be used; or must follow the grammar recognized by
 <code class="function">pango_font_description_from_string()</code> like:</p>
-<div class="informalexample">
-  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
-    <tbody>
-      <tr>
-        <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="function"><a href="ClutterGstPlayback.html#clutter-gst-playback-set-subtitle-font-name">clutter_gst_playback_set_subtitle_font_name</a></span> <span class="gtkdoc opt">(</span>player<span class="gtkdoc opt">,</span> <span class="string">&quot;Sans 24pt&quot;</span><span class="gtkdoc opt">);</span></pre></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+<div class="informalexample"><pre class="programlisting">
+  clutter_gst_playback_set_subtitle_font_name (player, "Sans 24pt");
+</pre></div>
 <p></p>
 <div class="refsect3">
-<a name="id-1.4.6.10.28.7"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-subtitle-font-name.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1240,7 +1210,7 @@ in the list returned by <a class="link" href="ClutterGstPlayback.html#clutter-gs
 <p>If <em class="parameter"><code>index_</code></em>
  is -1, the subtitles are turned off.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.29.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-subtitle-track.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1261,7 +1231,7 @@ in the list returned by <a class="link" href="ClutterGstPlayback.html#clutter-gs
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1272,7 +1242,7 @@ clutter_gst_playback_set_subtitle_uri (<em class="parameter"><code><a class="lin
 <p>Sets the location of a subtitle file to display while playing <em class="parameter"><code>self</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.30.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-subtitle-uri.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1304,7 +1274,7 @@ clutter_gst_playback_set_uri (<em class="parameter"><code><a class="link" href="
  to <em class="parameter"><code>uri</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.31.5"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-uri.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1337,7 +1307,7 @@ clutter_gst_playback_set_user_agent (<em class="parameter"><code><a class="link"
 promote your software, make it appear in statistics or because the server
 requires a special user agent you want to impersonate.</p>
 <div class="refsect3">
-<a name="id-1.4.6.10.32.6"></a><h4>Parameters</h4>
+<a name="clutter-gst-playback-set-user-agent.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1358,7 +1328,7 @@ requires a special user agent you want to impersonate.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1381,6 +1351,21 @@ should not be accessed directly.</p>
 };
 </pre>
 <p>Base class for <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a>.</p>
+<div class="refsect3">
+<a name="ClutterGstPlaybackClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlaybackClass.should-buffer"></a>should_buffer</code></em> ()</p></td>
+<td> </td>
+<td> </td>
+</tr></tbody>
+</table></div>
+</div>
 </div>
 </div>
 <div class="refsect1">
@@ -1392,7 +1377,7 @@ should not be accessed directly.</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1400,7 +1385,7 @@ should not be accessed directly.</p>
 <pre class="programlisting">  “audio-streams”            <span class="type">gpointer</span></pre>
 <p>List of audio streams available on the current media.</p>
 <p>Flags: Read</p>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1436,7 +1421,7 @@ as a value between 0.0 and 1.0.</p>
 <p>Whether or not the stream is being seeked.</p>
 <p>Flags: Read</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 1.6</p>
+<p class="since">Since: <a class="link" href="api-index-1-6.html#api-index-1.6">1.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1454,7 +1439,7 @@ value between 0.0 and 1.0.</p>
 <pre class="programlisting">  “seek-flags”               <a class="link" href="clutter-gst-Types.html#ClutterGstSeekFlags" title="enum ClutterGstSeekFlags"><span class="type">ClutterGstSeekFlags</span></a></pre>
 <p>Flags to use when seeking.</p>
 <p>Flags: Read / Write</p>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1474,7 +1459,7 @@ follow the same grammar as the one recognized by
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1482,7 +1467,7 @@ follow the same grammar as the one recognized by
 <pre class="programlisting">  “subtitle-tracks”          <span class="type">gpointer</span></pre>
 <p>List of subtitle tracks available.</p>
 <p>Flags: Read</p>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1507,7 +1492,7 @@ follow the same grammar as the one recognized by
 <p>The User Agent used by <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> with network protocols.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: NULL</p>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1516,12 +1501,12 @@ follow the same grammar as the one recognized by
 <a name="ClutterGstPlayback-should-buffer"></a><h3>The <code class="literal">“should-buffer”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 user_function (<a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *player,
-               <span class="type">GstQuery</span>           *query,
+               <a href="../gstreamer/GstQuery.html#GstQuery-struct"><span class="type">GstQuery</span></a>           *query,
                <span class="type">gpointer</span>            user_data)</pre>
 <p>The ::should-buffer signal is emitted every time the base class needs to
 decide whether it should continue buffering in download-buffering mode.</p>
 <div class="refsect3">
-<a name="id-1.4.6.13.2.5"></a><h4>Parameters</h4>
+<a name="ClutterGstPlayback-should-buffer.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -1548,12 +1533,11 @@ decide whether it should continue buffering in download-buffering mode.</p>
 </table></div>
 </div>
 <p>Flags: Run Last</p>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

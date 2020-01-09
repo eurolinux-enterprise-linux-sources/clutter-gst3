@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Clutter Gst 3.0.22
- Reference Manual: ClutterGstTypes</title>
+<title>Types: Clutter Gst 3.0.26
+ Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
-<link rel="home" href="index.html" title="Clutter Gst 3.0.22 Reference Manual">
+<link rel="home" href="index.html" title="Clutter Gst 3.0.26 Reference Manual">
 <link rel="up" href="ch05.html" title="ClutterGst utils">
 <link rel="prev" href="ch05.html" title="ClutterGst utils">
 <link rel="next" href="clutter-gst-Utilities.html" title="Utilities">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -28,8 +28,8 @@
 <a name="clutter-gst-Types"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
-<h2><span class="refentrytitle"><a name="clutter-gst-Types.top_of_page"></a>ClutterGstTypes</span></h2>
-<p>ClutterGstTypes — Clutter-Gst common types.</p>
+<h2><span class="refentrytitle"><a name="clutter-gst-Types.top_of_page"></a>Types</span></h2>
+<p>Types — Clutter-Gst common types.</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -101,14 +101,14 @@
 </div>
 <div class="refsect1">
 <a name="clutter-gst-Types.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GBoxed
+<pre class="screen">    <a href="/home/djdeath/src/gnome-build/share/gtk-doc/html/gobject/gobject-Boxed-Types.html">GBoxed</a>
     <span class="lineart">├──</span> ClutterGstBox
     <span class="lineart">├──</span> ClutterGstFrame
     <span class="lineart">├──</span> ClutterGstOverlay
     <span class="lineart">╰──</span> ClutterGstOverlays
-    GEnum
+    <a href="/home/djdeath/src/gnome-build/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
     <span class="lineart">╰──</span> ClutterGstBufferingMode
-    GFlags
+    <a href="/home/djdeath/src/gnome-build/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GFlags</a>
     <span class="lineart">╰──</span> ClutterGstSeekFlags
 </pre>
 </div>
@@ -121,14 +121,56 @@
 <a name="clutter-gst-box-get-width"></a><h3>clutter_gst_box_get_width ()</h3>
 <pre class="programlisting"><span class="returnvalue">gfloat</span>
 clutter_gst_box_get_width (<em class="parameter"><code>const <a class="link" href="clutter-gst-Types.html#ClutterGstBox"><span class="type">ClutterGstBox</span></a> *box</code></em>);</pre>
-<p class="since">Since 3.0</p>
+<p>Retrieves the width of the <em class="parameter"><code>box</code></em>
+</p>
+<div class="refsect3">
+<a name="clutter-gst-box-get-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>box</p></td>
+<td class="parameter_description"><p>a <a class="link" href="clutter-gst-Types.html#ClutterGstBox"><span class="type">ClutterGstBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="clutter-gst-box-get-width.returns"></a><h4>Returns</h4>
+<p> the width of the box</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="clutter-gst-box-get-height"></a><h3>clutter_gst_box_get_height ()</h3>
 <pre class="programlisting"><span class="returnvalue">gfloat</span>
 clutter_gst_box_get_height (<em class="parameter"><code>const <a class="link" href="clutter-gst-Types.html#ClutterGstBox"><span class="type">ClutterGstBox</span></a> *box</code></em>);</pre>
-<p class="since">Since 3.0</p>
+<p>Retrieves the height of the <em class="parameter"><code>box</code></em>
+</p>
+<div class="refsect3">
+<a name="clutter-gst-box-get-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>box</p></td>
+<td class="parameter_description"><p>a <a class="link" href="clutter-gst-Types.html#ClutterGstBox"><span class="type">ClutterGstBox</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="clutter-gst-box-get-height.returns"></a><h4>Returns</h4>
+<p> the height of the box</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -137,7 +179,7 @@ clutter_gst_box_get_height (<em class="parameter"><code>const <a class="link" hr
 <a name="ClutterGstBufferingMode"></a><h3>enum ClutterGstBufferingMode</h3>
 <p>Different buffering policies clutter-gst supports</p>
 <div class="refsect3">
-<a name="id-1.6.2.12.2.4"></a><h4>Members</h4>
+<a name="ClutterGstBufferingMode.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
@@ -162,14 +204,14 @@ clutter_gst_box_get_height (<em class="parameter"><code>const <a class="link" hr
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="ClutterGstSeekFlags"></a><h3>enum ClutterGstSeekFlags</h3>
 <p>Flags that can be given to <code class="function">clutter_gst_player_set_seek_flags()</code>.</p>
 <div class="refsect3">
-<a name="id-1.6.2.12.3.4"></a><h4>Members</h4>
+<a name="ClutterGstSeekFlags.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
@@ -194,7 +236,7 @@ clutter_gst_box_get_height (<em class="parameter"><code>const <a class="link" hr
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 1.4</p>
+<p class="since">Since: <a class="link" href="api-index-1-4.html#api-index-1.4">1.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -207,7 +249,41 @@ clutter_gst_box_get_height (<em class="parameter"><code>const <a class="link" hr
   gfloat y2;
 };
 </pre>
-<p class="since">Since 3.0</p>
+<p>Bounding box of an area in a video texture or actor's allocation.
+Coordinates are usually expressed in the [0, 1] interval.</p>
+<div class="refsect3">
+<a name="ClutterGstBox.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><span class="type">gfloat</span> <em class="structfield"><code><a name="ClutterGstBox-struct.x1"></a>x1</code></em>;</p></td>
+<td class="struct_member_description"><p>X coordinate of the top left corner</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">gfloat</span> <em class="structfield"><code><a name="ClutterGstBox-struct.y1"></a>y1</code></em>;</p></td>
+<td class="struct_member_description"><p>Y coordinate of the top left corner</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">gfloat</span> <em class="structfield"><code><a name="ClutterGstBox-struct.x2"></a>x2</code></em>;</p></td>
+<td class="struct_member_description"><p>X coordinate of the bottom right corner</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">gfloat</span> <em class="structfield"><code><a name="ClutterGstBox-struct.y2"></a>y2</code></em>;</p></td>
+<td class="struct_member_description"><p>Y coordinate of the bottom right corner</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -217,7 +293,30 @@ clutter_gst_box_get_height (<em class="parameter"><code>const <a class="link" hr
   CoglPipeline              *pipeline;
 };
 </pre>
-<p class="since">Since 3.0</p>
+<p>Represents a frame outputted by the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a>.</p>
+<div class="refsect3">
+<a name="ClutterGstFrame.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="clutter-gst-Types.html#ClutterGstVideoResolution" title="struct ClutterGstVideoResolution"><span class="type">ClutterGstVideoResolution</span></a> <em class="structfield"><code><a name="ClutterGstFrame-struct.resolution"></a>resolution</code></em>;</p></td>
+<td class="struct_member_description"><p>a <a class="link" href="clutter-gst-Types.html#ClutterGstVideoResolution" title="struct ClutterGstVideoResolution"><span class="type">ClutterGstVideoResolution</span></a></p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">CoglPipeline</span> *<em class="structfield"><code><a name="ClutterGstFrame-struct.pipeline"></a>pipeline</code></em>;</p></td>
+<td class="struct_member_description"><p>a <span class="type">CoglPipeline</span> to paint a frame</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -227,7 +326,31 @@ clutter_gst_box_get_height (<em class="parameter"><code>const <a class="link" hr
   CoglPipeline  *pipeline;
 };
 </pre>
-<p class="since">Since 3.0</p>
+<p>Represents a video overlay outputted by the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a>.</p>
+<div class="refsect3">
+<a name="ClutterGstOverlay.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="clutter-gst-Types.html#ClutterGstBox"><span class="type">ClutterGstBox</span></a> <em class="structfield"><code><a name="ClutterGstOverlay-struct.position"></a>position</code></em>;</p></td>
+<td class="struct_member_description"><p>a <a class="link" href="clutter-gst-Types.html#ClutterGstBox"><span class="type">ClutterGstBox</span></a> representing the position of the
+overlay within a <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">CoglPipeline</span> *<em class="structfield"><code><a name="ClutterGstOverlay-struct.pipeline"></a>pipeline</code></em>;</p></td>
+<td class="struct_member_description"><p>a <span class="type">CoglPipeline</span> to paint an overlay</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -236,7 +359,22 @@ clutter_gst_box_get_height (<em class="parameter"><code>const <a class="link" hr
   GPtrArray *overlays;
 };
 </pre>
-<p class="since">Since 3.0</p>
+<div class="refsect3">
+<a name="ClutterGstOverlays.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="struct_member_name"><p><span class="type">GPtrArray</span> *<em class="structfield"><code><a name="ClutterGstOverlays-struct.overlays"></a>overlays</code></em>;</p></td>
+<td class="struct_member_description"><p>an array of <a class="link" href="clutter-gst-Types.html#ClutterGstOverlay"><span class="type">ClutterGstOverlay</span></a></p></td>
+<td class="struct_member_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -249,12 +387,44 @@ clutter_gst_box_get_height (<em class="parameter"><code>const <a class="link" hr
   gint par_d;
 };
 </pre>
-<p class="since">Since 3.0</p>
+<p>A video resolution.</p>
+<div class="refsect3">
+<a name="ClutterGstVideoResolution.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><span class="type">gint</span> <em class="structfield"><code><a name="ClutterGstVideoResolution.width"></a>width</code></em>;</p></td>
+<td class="struct_member_description"><p>the width, in pixels</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">gint</span> <em class="structfield"><code><a name="ClutterGstVideoResolution.height"></a>height</code></em>;</p></td>
+<td class="struct_member_description"><p>the height, in pixels</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">gint</span> <em class="structfield"><code><a name="ClutterGstVideoResolution.par-n"></a>par_n</code></em>;</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">gint</span> <em class="structfield"><code><a name="ClutterGstVideoResolution.par-d"></a>par_d</code></em>;</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

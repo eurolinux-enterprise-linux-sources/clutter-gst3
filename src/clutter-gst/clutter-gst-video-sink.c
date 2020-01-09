@@ -796,6 +796,9 @@ static const gchar *color_balance_shader =
   "  return clutter_gst_yuv_to_rgb (corrected_yuv);\n"
   "}\n";
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wformat-nonliteral"
+
 static void
 clutter_gst_video_sink_setup_balance (ClutterGstVideoSink *sink,
                                       CoglPipeline *pipeline)
@@ -889,6 +892,8 @@ clutter_gst_video_sink_setup_balance (ClutterGstVideoSink *sink,
       priv->video_start = priv->custom_start;
     }
 }
+
+#pragma GCC diagnostic pop
 
 /* YUV <-> RGB conversions */
 
@@ -1902,20 +1907,20 @@ clutter_gst_video_sink_parse_caps (GstCaps *caps,
       format = CLUTTER_GST_NV12;
       break;
     case GST_VIDEO_FORMAT_RGB:
+    case GST_VIDEO_FORMAT_RGBx:
       format = CLUTTER_GST_RGB24;
       bgr = FALSE;
       break;
     case GST_VIDEO_FORMAT_BGR:
+    case GST_VIDEO_FORMAT_BGRx:
       format = CLUTTER_GST_RGB24;
       bgr = TRUE;
       break;
     case GST_VIDEO_FORMAT_RGBA:
-    case GST_VIDEO_FORMAT_RGBx:
       format = CLUTTER_GST_RGB32;
       bgr = FALSE;
       break;
     case GST_VIDEO_FORMAT_BGRA:
-    case GST_VIDEO_FORMAT_BGRx:
       format = CLUTTER_GST_RGB32;
       bgr = TRUE;
       break;
@@ -2003,6 +2008,7 @@ clutter_gst_source_dispatch (GSource *source,
   ClutterGstVideoSinkPrivate *priv = gst_source->sink->priv;
   GstBuffer *buffer;
   gboolean pipeline_ready = FALSE;
+  gboolean caps_parsed;
 
   g_mutex_lock (&gst_source->buffer_lock);
 
@@ -2012,7 +2018,10 @@ clutter_gst_source_dispatch (GSource *source,
         gst_pad_get_current_caps (GST_BASE_SINK_PAD ((GST_BASE_SINK
                                                       (gst_source->sink))));
 
-      if (!clutter_gst_video_sink_parse_caps (caps, gst_source->sink, TRUE))
+      caps_parsed = clutter_gst_video_sink_parse_caps (caps, gst_source->sink, TRUE);
+      gst_caps_unref (caps);
+
+      if (!caps_parsed)
         goto negotiation_fail;
 
       gst_source->has_new_caps = FALSE;
@@ -2136,9 +2145,6 @@ clutter_gst_video_sink_init (ClutterGstVideoSink *sink)
   priv->tableu = g_new0 (guint8, 256 * 256);
   priv->tablev = g_new0 (guint8, 256 * 256);
 
-  priv->ctx = clutter_gst_get_cogl_context ();
-  priv->renderers = clutter_gst_build_renderers_list (priv->ctx);
-  priv->caps = clutter_gst_build_caps (priv->renderers);
   priv->overlays = clutter_gst_overlays_new ();
 }
 
@@ -2212,6 +2218,18 @@ clutter_gst_video_sink_dispose (GObject *object)
       priv->tablev = NULL;
     }
 
+  if (priv->renderers)
+    {
+      g_slist_free (priv->renderers);
+      priv->renderers = NULL;
+    }
+
+  if (priv->overlays)
+    {
+      g_boxed_free (CLUTTER_GST_TYPE_OVERLAYS, priv->overlays);
+      priv->overlays = NULL;
+    }
+
   G_OBJECT_CLASS (clutter_gst_video_sink_parent_class)->dispose (object);
 }
 
@@ -2228,6 +2246,10 @@ clutter_gst_video_sink_start (GstBaseSink *base_sink)
   ClutterGstVideoSinkPrivate *priv = sink->priv;
 
   GST_INFO_OBJECT (sink, "Start");
+
+  priv->ctx = clutter_gst_get_cogl_context ();
+  priv->renderers = clutter_gst_build_renderers_list (priv->ctx);
+  priv->caps = clutter_gst_build_caps (priv->renderers);
 
   priv->source = clutter_gst_source_new (sink);
   g_source_attach ((GSource *) priv->source, NULL);
