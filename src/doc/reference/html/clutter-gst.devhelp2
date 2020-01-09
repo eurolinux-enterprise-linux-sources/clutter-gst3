@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Clutter Gst 3.0.22&#10; Reference Manual" link="index.html" author="" name="clutter-gst" version="2" language="c">
+  <chapters>
+    <sub name="Clutter Gst Overview" link="ch01.html"/>
+    <sub name="Clutter content objects" link="ch02.html">
+      <sub name="ClutterGstContent" link="ClutterGstContent.html"/>
+      <sub name="ClutterGstAspectratio" link="ClutterGstAspectratio.html"/>
+      <sub name="ClutterGstCrop" link="ClutterGstCrop.html"/>
+    </sub>
+    <sub name="ClutterGst players" link="ch03.html">
+      <sub name="ClutterGstPlayer" link="ClutterGstPlayer.html"/>
+      <sub name="ClutterGstCamera" link="ClutterGstCamera.html"/>
+      <sub name="ClutterGstCameraDevice" link="ClutterGstCameraDevice.html"/>
+      <sub name="ClutterGstCameraManager" link="ClutterGstCameraManager.html"/>
+      <sub name="ClutterGstPlayback" link="ClutterGstPlayback.html"/>
+    </sub>
+    <sub name="ClutterGst sink" link="ch04.html">
+      <sub name="Video Sink" link="clutter-gst-Video-Sink.html"/>
+    </sub>
+    <sub name="ClutterGst utils" link="ch05.html">
+      <sub name="ClutterGstTypes" link="clutter-gst-Types.html"/>
+      <sub name="Utilities" link="clutter-gst-Utilities.html"/>
+      <sub name="Versioning Macros" link="clutter-gst-Versioning-Macros.html"/>
+    </sub>
+    <sub name="Index of all symbols" link="api-index-all.html"/>
+    <sub name="Index of new symbols in 1.4" link="api-index-1-4.html"/>
+    <sub name="Index of new symbols in 1.6" link="api-index-1-6.html"/>
+    <sub name="Index of new symbols in 3.0" link="api-index-3-0.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+    <sub name="License" link="license.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="clutter_gst_content_new ()" link="ClutterGstContent.html#clutter-gst-content-new"/>
+    <keyword type="function" name="clutter_gst_content_new_with_sink ()" link="ClutterGstContent.html#clutter-gst-content-new-with-sink" since="3.0"/>
+    <keyword type="function" name="clutter_gst_content_get_frame ()" link="ClutterGstContent.html#clutter-gst-content-get-frame" since="3.0"/>
+    <keyword type="function" name="clutter_gst_content_get_player ()" link="ClutterGstContent.html#clutter-gst-content-get-player" since="3.0"/>
+    <keyword type="function" name="clutter_gst_content_get_sink ()" link="ClutterGstContent.html#clutter-gst-content-get-sink" since="3.0"/>
+    <keyword type="function" name="clutter_gst_content_set_frame ()" link="ClutterGstContent.html#clutter-gst-content-set-frame" since="3.0"/>
+    <keyword type="function" name="clutter_gst_content_set_player ()" link="ClutterGstContent.html#clutter-gst-content-set-player" since="3.0"/>
+    <keyword type="function" name="clutter_gst_content_set_sink ()" link="ClutterGstContent.html#clutter-gst-content-set-sink" since="3.0"/>
+    <keyword type="function" name="clutter_gst_content_get_overlays ()" link="ClutterGstContent.html#clutter-gst-content-get-overlays" since="3.0"/>
+    <keyword type="struct" name="struct ClutterGstContent" link="ClutterGstContent.html#ClutterGstContent-struct"/>
+    <keyword type="struct" name="struct ClutterGstContentClass" link="ClutterGstContent.html#ClutterGstContentClass" since="0.0"/>
+    <keyword type="property" name="The “frame” property" link="ClutterGstContent.html#ClutterGstContent--frame"/>
+    <keyword type="property" name="The “paint-frame” property" link="ClutterGstContent.html#ClutterGstContent--paint-frame"/>
+    <keyword type="property" name="The “paint-overlays” property" link="ClutterGstContent.html#ClutterGstContent--paint-overlays"/>
+    <keyword type="property" name="The “player” property" link="ClutterGstContent.html#ClutterGstContent--player"/>
+    <keyword type="property" name="The “sink” property" link="ClutterGstContent.html#ClutterGstContent--sink"/>
+    <keyword type="signal" name="The “size-change” signal" link="ClutterGstContent.html#ClutterGstContent-size-change"/>
+    <keyword type="function" name="clutter_gst_aspectratio_new ()" link="ClutterGstAspectratio.html#clutter-gst-aspectratio-new"/>
+    <keyword type="struct" name="struct ClutterGstAspectratio" link="ClutterGstAspectratio.html#ClutterGstAspectratio-struct"/>
+    <keyword type="struct" name="struct ClutterGstAspectratioClass" link="ClutterGstAspectratio.html#ClutterGstAspectratioClass"/>
+    <keyword type="property" name="The “fill-allocation” property" link="ClutterGstAspectratio.html#ClutterGstAspectratio--fill-allocation"/>
+    <keyword type="property" name="The “paint-borders” property" link="ClutterGstAspectratio.html#ClutterGstAspectratio--paint-borders"/>
+    <keyword type="function" name="clutter_gst_crop_new ()" link="ClutterGstCrop.html#clutter-gst-crop-new"/>
+    <keyword type="struct" name="struct ClutterGstCrop" link="ClutterGstCrop.html#ClutterGstCrop-struct"/>
+    <keyword type="struct" name="struct ClutterGstCropClass" link="ClutterGstCrop.html#ClutterGstCropClass"/>
+    <keyword type="property" name="The “cull-backface” property" link="ClutterGstCrop.html#ClutterGstCrop--cull-backface"/>
+    <keyword type="property" name="The “input-region” property" link="ClutterGstCrop.html#ClutterGstCrop--input-region"/>
+    <keyword type="property" name="The “output-region” property" link="ClutterGstCrop.html#ClutterGstCrop--output-region"/>
+    <keyword type="property" name="The “paint-borders” property" link="ClutterGstCrop.html#ClutterGstCrop--paint-borders"/>
+    <keyword type="function" name="clutter_gst_player_get_frame ()" link="ClutterGstPlayer.html#clutter-gst-player-get-frame" since="3.0"/>
+    <keyword type="function" name="clutter_gst_player_get_pipeline ()" link="ClutterGstPlayer.html#clutter-gst-player-get-pipeline" since="3.0"/>
+    <keyword type="function" name="clutter_gst_player_get_video_sink ()" link="ClutterGstPlayer.html#clutter-gst-player-get-video-sink" since="3.0"/>
+    <keyword type="function" name="clutter_gst_player_get_idle ()" link="ClutterGstPlayer.html#clutter-gst-player-get-idle" since="3.0"/>
+    <keyword type="function" name="clutter_gst_player_get_playing ()" link="ClutterGstPlayer.html#clutter-gst-player-get-playing" since="3.0"/>
+    <keyword type="function" name="clutter_gst_player_set_playing ()" link="ClutterGstPlayer.html#clutter-gst-player-set-playing" since="3.0"/>
+    <keyword type="function" name="clutter_gst_player_get_audio_volume ()" link="ClutterGstPlayer.html#clutter-gst-player-get-audio-volume" since="3.0"/>
+    <keyword type="function" name="clutter_gst_player_set_audio_volume ()" link="ClutterGstPlayer.html#clutter-gst-player-set-audio-volume" since="3.0"/>
+    <keyword type="struct" name="ClutterGstPlayer" link="ClutterGstPlayer.html#ClutterGstPlayer-struct"/>
+    <keyword type="struct" name="struct ClutterGstPlayerIface" link="ClutterGstPlayer.html#ClutterGstPlayerIface" since="1.4"/>
+    <keyword type="property" name="The “audio-volume” property" link="ClutterGstPlayer.html#ClutterGstPlayer--audio-volume"/>
+    <keyword type="property" name="The “idle” property" link="ClutterGstPlayer.html#ClutterGstPlayer--idle"/>
+    <keyword type="property" name="The “playing” property" link="ClutterGstPlayer.html#ClutterGstPlayer--playing"/>
+    <keyword type="signal" name="The “eos” signal" link="ClutterGstPlayer.html#ClutterGstPlayer-eos"/>
+    <keyword type="signal" name="The “error” signal" link="ClutterGstPlayer.html#ClutterGstPlayer-error"/>
+    <keyword type="signal" name="The “new-frame” signal" link="ClutterGstPlayer.html#ClutterGstPlayer-new-frame"/>
+    <keyword type="signal" name="The “ready” signal" link="ClutterGstPlayer.html#ClutterGstPlayer-ready"/>
+    <keyword type="signal" name="The “size-change” signal" link="ClutterGstPlayer.html#ClutterGstPlayer-size-change"/>
+    <keyword type="function" name="clutter_gst_camera_new ()" link="ClutterGstCamera.html#clutter-gst-camera-new"/>
+    <keyword type="function" name="clutter_gst_camera_get_brightness ()" link="ClutterGstCamera.html#clutter-gst-camera-get-brightness"/>
+    <keyword type="function" name="clutter_gst_camera_get_brightness_range ()" link="ClutterGstCamera.html#clutter-gst-camera-get-brightness-range"/>
+    <keyword type="function" name="clutter_gst_camera_get_camera_device ()" link="ClutterGstCamera.html#clutter-gst-camera-get-camera-device"/>
+    <keyword type="function" name="clutter_gst_camera_get_color_balance_property ()" link="ClutterGstCamera.html#clutter-gst-camera-get-color-balance-property"/>
+    <keyword type="function" name="clutter_gst_camera_get_color_balance_property_range ()" link="ClutterGstCamera.html#clutter-gst-camera-get-color-balance-property-range"/>
+    <keyword type="function" name="clutter_gst_camera_get_contrast ()" link="ClutterGstCamera.html#clutter-gst-camera-get-contrast"/>
+    <keyword type="function" name="clutter_gst_camera_get_contrast_range ()" link="ClutterGstCamera.html#clutter-gst-camera-get-contrast-range"/>
+    <keyword type="function" name="clutter_gst_camera_get_filter ()" link="ClutterGstCamera.html#clutter-gst-camera-get-filter"/>
+    <keyword type="function" name="clutter_gst_camera_get_gamma ()" link="ClutterGstCamera.html#clutter-gst-camera-get-gamma"/>
+    <keyword type="function" name="clutter_gst_camera_get_gamma_range ()" link="ClutterGstCamera.html#clutter-gst-camera-get-gamma-range"/>
+    <keyword type="function" name="clutter_gst_camera_get_hue ()" link="ClutterGstCamera.html#clutter-gst-camera-get-hue"/>
+    <keyword type="function" name="clutter_gst_camera_get_hue_range ()" link="ClutterGstCamera.html#clutter-gst-camera-get-hue-range"/>
+    <keyword type="function" name="clutter_gst_camera_get_saturation ()" link="ClutterGstCamera.html#clutter-gst-camera-get-saturation"/>
+    <keyword type="function" name="clutter_gst_camera_get_saturation_range ()" link="ClutterGstCamera.html#clutter-gst-camera-get-saturation-range"/>
+    <keyword type="function" name="clutter_gst_camera_is_ready_for_capture ()" link="ClutterGstCamera.html#clutter-gst-camera-is-ready-for-capture"/>
+    <keyword type="function" name="clutter_gst_camera_is_recording_video ()" link="ClutterGstCamera.html#clutter-gst-camera-is-recording-video"/>
+    <keyword type="function" name="clutter_gst_camera_remove_filter ()" link="ClutterGstCamera.html#clutter-gst-camera-remove-filter"/>
+    <keyword type="function" name="clutter_gst_camera_set_brightness ()" link="ClutterGstCamera.html#clutter-gst-camera-set-brightness"/>
+    <keyword type="function" name="clutter_gst_camera_set_camera_device ()" link="ClutterGstCamera.html#clutter-gst-camera-set-camera-device"/>
+    <keyword type="function" name="clutter_gst_camera_set_color_balance_property ()" link="ClutterGstCamera.html#clutter-gst-camera-set-color-balance-property"/>
+    <keyword type="function" name="clutter_gst_camera_set_contrast ()" link="ClutterGstCamera.html#clutter-gst-camera-set-contrast"/>
+    <keyword type="function" name="clutter_gst_camera_set_filter ()" link="ClutterGstCamera.html#clutter-gst-camera-set-filter"/>
+    <keyword type="function" name="clutter_gst_camera_set_gamma ()" link="ClutterGstCamera.html#clutter-gst-camera-set-gamma"/>
+    <keyword type="function" name="clutter_gst_camera_set_hue ()" link="ClutterGstCamera.html#clutter-gst-camera-set-hue"/>
+    <keyword type="function" name="clutter_gst_camera_set_photo_profile ()" link="ClutterGstCamera.html#clutter-gst-camera-set-photo-profile"/>
+    <keyword type="function" name="clutter_gst_camera_set_saturation ()" link="ClutterGstCamera.html#clutter-gst-camera-set-saturation"/>
+    <keyword type="function" name="clutter_gst_camera_set_video_profile ()" link="ClutterGstCamera.html#clutter-gst-camera-set-video-profile"/>
+    <keyword type="function" name="clutter_gst_camera_start_video_recording ()" link="ClutterGstCamera.html#clutter-gst-camera-start-video-recording"/>
+    <keyword type="function" name="clutter_gst_camera_stop_video_recording ()" link="ClutterGstCamera.html#clutter-gst-camera-stop-video-recording"/>
+    <keyword type="function" name="clutter_gst_camera_supports_color_balance ()" link="ClutterGstCamera.html#clutter-gst-camera-supports-color-balance"/>
+    <keyword type="function" name="clutter_gst_camera_supports_gamma_correction ()" link="ClutterGstCamera.html#clutter-gst-camera-supports-gamma-correction"/>
+    <keyword type="function" name="clutter_gst_camera_take_photo ()" link="ClutterGstCamera.html#clutter-gst-camera-take-photo"/>
+    <keyword type="function" name="clutter_gst_camera_take_photo_pixbuf ()" link="ClutterGstCamera.html#clutter-gst-camera-take-photo-pixbuf"/>
+    <keyword type="struct" name="struct ClutterGstCamera" link="ClutterGstCamera.html#ClutterGstCamera-struct"/>
+    <keyword type="struct" name="struct ClutterGstCameraClass" link="ClutterGstCamera.html#ClutterGstCameraClass"/>
+    <keyword type="property" name="The “device” property" link="ClutterGstCamera.html#ClutterGstCamera--device"/>
+    <keyword type="signal" name="The “photo-saved” signal" link="ClutterGstCamera.html#ClutterGstCamera-photo-saved"/>
+    <keyword type="signal" name="The “photo-taken” signal" link="ClutterGstCamera.html#ClutterGstCamera-photo-taken"/>
+    <keyword type="signal" name="The “ready-for-capture” signal" link="ClutterGstCamera.html#ClutterGstCamera-ready-for-capture"/>
+    <keyword type="signal" name="The “video-saved” signal" link="ClutterGstCamera.html#ClutterGstCamera-video-saved"/>
+    <keyword type="function" name="clutter_gst_camera_device_get_capture_resolution ()" link="ClutterGstCameraDevice.html#clutter-gst-camera-device-get-capture-resolution"/>
+    <keyword type="function" name="clutter_gst_camera_device_get_name ()" link="ClutterGstCameraDevice.html#clutter-gst-camera-device-get-name"/>
+    <keyword type="function" name="clutter_gst_camera_device_get_node ()" link="ClutterGstCameraDevice.html#clutter-gst-camera-device-get-node"/>
+    <keyword type="function" name="clutter_gst_camera_device_get_supported_resolutions ()" link="ClutterGstCameraDevice.html#clutter-gst-camera-device-get-supported-resolutions"/>
+    <keyword type="function" name="clutter_gst_camera_device_set_capture_resolution ()" link="ClutterGstCameraDevice.html#clutter-gst-camera-device-set-capture-resolution"/>
+    <keyword type="struct" name="struct ClutterGstCameraDevice" link="ClutterGstCameraDevice.html#ClutterGstCameraDevice-struct"/>
+    <keyword type="struct" name="struct ClutterGstCameraDeviceClass" link="ClutterGstCameraDevice.html#ClutterGstCameraDeviceClass"/>
+    <keyword type="property" name="The “element-factory” property" link="ClutterGstCameraDevice.html#ClutterGstCameraDevice--element-factory"/>
+    <keyword type="property" name="The “name” property" link="ClutterGstCameraDevice.html#ClutterGstCameraDevice--name"/>
+    <keyword type="property" name="The “node” property" link="ClutterGstCameraDevice.html#ClutterGstCameraDevice--node"/>
+    <keyword type="signal" name="The “capture-resolution-changed” signal" link="ClutterGstCameraDevice.html#ClutterGstCameraDevice-capture-resolution-changed"/>
+    <keyword type="function" name="clutter_gst_camera_manager_get_camera_devices ()" link="ClutterGstCameraManager.html#clutter-gst-camera-manager-get-camera-devices"/>
+    <keyword type="function" name="clutter_gst_camera_manager_get_default ()" link="ClutterGstCameraManager.html#clutter-gst-camera-manager-get-default"/>
+    <keyword type="struct" name="struct ClutterGstCameraManager" link="ClutterGstCameraManager.html#ClutterGstCameraManager-struct"/>
+    <keyword type="struct" name="struct ClutterGstCameraManagerClass" link="ClutterGstCameraManager.html#ClutterGstCameraManagerClass"/>
+    <keyword type="signal" name="The “camera-added” signal" link="ClutterGstCameraManager.html#ClutterGstCameraManager-camera-added"/>
+    <keyword type="signal" name="The “camera-removed” signal" link="ClutterGstCameraManager.html#ClutterGstCameraManager-camera-removed"/>
+    <keyword type="function" name="clutter_gst_playback_new ()" link="ClutterGstPlayback.html#clutter-gst-playback-new"/>
+    <keyword type="function" name="clutter_gst_playback_get_audio_stream ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-audio-stream" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_get_audio_streams ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-audio-streams" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_get_buffer_duration ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-buffer-duration"/>
+    <keyword type="function" name="clutter_gst_playback_get_buffer_fill ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-buffer-fill"/>
+    <keyword type="function" name="clutter_gst_playback_get_buffering_mode ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-buffering-mode" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_get_buffer_size ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-buffer-size"/>
+    <keyword type="function" name="clutter_gst_playback_get_duration ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-duration"/>
+    <keyword type="function" name="clutter_gst_playback_get_in_seek ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-in-seek" since="1.6"/>
+    <keyword type="function" name="clutter_gst_playback_get_position ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-position"/>
+    <keyword type="function" name="clutter_gst_playback_get_progress ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-progress"/>
+    <keyword type="function" name="clutter_gst_playback_get_seek_flags ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-seek-flags" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_get_subtitle_font_name ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-font-name"/>
+    <keyword type="function" name="clutter_gst_playback_get_subtitle_track ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-track" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_get_subtitle_tracks ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-tracks" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_get_subtitle_uri ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-uri"/>
+    <keyword type="function" name="clutter_gst_playback_get_uri ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-uri"/>
+    <keyword type="function" name="clutter_gst_playback_get_user_agent ()" link="ClutterGstPlayback.html#clutter-gst-playback-get-user-agent" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_is_live_media ()" link="ClutterGstPlayback.html#clutter-gst-playback-is-live-media"/>
+    <keyword type="function" name="clutter_gst_playback_set_audio_stream ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-audio-stream" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_set_buffer_duration ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-buffer-duration"/>
+    <keyword type="function" name="clutter_gst_playback_set_buffering_mode ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-buffering-mode" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_set_buffer_size ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-buffer-size"/>
+    <keyword type="function" name="clutter_gst_playback_set_filename ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-filename"/>
+    <keyword type="function" name="clutter_gst_playback_set_progress ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-progress"/>
+    <keyword type="function" name="clutter_gst_playback_set_seek_flags ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-seek-flags" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_set_subtitle_font_name ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-subtitle-font-name"/>
+    <keyword type="function" name="clutter_gst_playback_set_subtitle_track ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-subtitle-track" since="1.4"/>
+    <keyword type="function" name="clutter_gst_playback_set_subtitle_uri ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-subtitle-uri"/>
+    <keyword type="function" name="clutter_gst_playback_set_uri ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-uri"/>
+    <keyword type="function" name="clutter_gst_playback_set_user_agent ()" link="ClutterGstPlayback.html#clutter-gst-playback-set-user-agent" since="1.4"/>
+    <keyword type="struct" name="struct ClutterGstPlayback" link="ClutterGstPlayback.html#ClutterGstPlayback-struct"/>
+    <keyword type="struct" name="struct ClutterGstPlaybackClass" link="ClutterGstPlayback.html#ClutterGstPlaybackClass"/>
+    <keyword type="property" name="The “audio-stream” property" link="ClutterGstPlayback.html#ClutterGstPlayback--audio-stream"/>
+    <keyword type="property" name="The “audio-streams” property" link="ClutterGstPlayback.html#ClutterGstPlayback--audio-streams"/>
+    <keyword type="property" name="The “buffer-fill” property" link="ClutterGstPlayback.html#ClutterGstPlayback--buffer-fill"/>
+    <keyword type="property" name="The “can-seek” property" link="ClutterGstPlayback.html#ClutterGstPlayback--can-seek"/>
+    <keyword type="property" name="The “duration” property" link="ClutterGstPlayback.html#ClutterGstPlayback--duration"/>
+    <keyword type="property" name="The “in-seek” property" link="ClutterGstPlayback.html#ClutterGstPlayback--in-seek"/>
+    <keyword type="property" name="The “progress” property" link="ClutterGstPlayback.html#ClutterGstPlayback--progress"/>
+    <keyword type="property" name="The “seek-flags” property" link="ClutterGstPlayback.html#ClutterGstPlayback--seek-flags"/>
+    <keyword type="property" name="The “subtitle-font-name” property" link="ClutterGstPlayback.html#ClutterGstPlayback--subtitle-font-name"/>
+    <keyword type="property" name="The “subtitle-track” property" link="ClutterGstPlayback.html#ClutterGstPlayback--subtitle-track"/>
+    <keyword type="property" name="The “subtitle-tracks” property" link="ClutterGstPlayback.html#ClutterGstPlayback--subtitle-tracks"/>
+    <keyword type="property" name="The “subtitle-uri” property" link="ClutterGstPlayback.html#ClutterGstPlayback--subtitle-uri"/>
+    <keyword type="property" name="The “uri” property" link="ClutterGstPlayback.html#ClutterGstPlayback--uri"/>
+    <keyword type="property" name="The “user-agent” property" link="ClutterGstPlayback.html#ClutterGstPlayback--user-agent"/>
+    <keyword type="signal" name="The “should-buffer” signal" link="ClutterGstPlayback.html#ClutterGstPlayback-should-buffer"/>
+    <keyword type="function" name="clutter_gst_video_sink_new ()" link="clutter-gst-Video-Sink.html#clutter-gst-video-sink-new" since="3.0"/>
+    <keyword type="function" name="clutter_gst_video_sink_is_ready ()" link="clutter-gst-Video-Sink.html#clutter-gst-video-sink-is-ready" since="3.0"/>
+    <keyword type="function" name="clutter_gst_video_sink_get_frame ()" link="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-frame" since="3.0"/>
+    <keyword type="function" name="clutter_gst_video_sink_get_pipeline ()" link="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-pipeline" since="3.0"/>
+    <keyword type="function" name="clutter_gst_video_sink_setup_pipeline ()" link="clutter-gst-Video-Sink.html#clutter-gst-video-sink-setup-pipeline" since="3.0"/>
+    <keyword type="function" name="clutter_gst_video_sink_get_overlays ()" link="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-overlays"/>
+    <keyword type="struct" name="struct ClutterGstVideoSink" link="clutter-gst-Video-Sink.html#ClutterGstVideoSink-struct"/>
+    <keyword type="struct" name="struct ClutterGstVideoSinkClass" link="clutter-gst-Video-Sink.html#ClutterGstVideoSinkClass" since="3.0"/>
+    <keyword type="property" name="The “update-priority” property" link="clutter-gst-Video-Sink.html#ClutterGstVideoSink--update-priority"/>
+    <keyword type="signal" name="The “new-frame” signal" link="clutter-gst-Video-Sink.html#ClutterGstVideoSink-new-frame"/>
+    <keyword type="signal" name="The “new-overlays” signal" link="clutter-gst-Video-Sink.html#ClutterGstVideoSink-new-overlays"/>
+    <keyword type="signal" name="The “pipeline-ready” signal" link="clutter-gst-Video-Sink.html#ClutterGstVideoSink-pipeline-ready"/>
+    <keyword type="function" name="clutter_gst_box_get_width ()" link="clutter-gst-Types.html#clutter-gst-box-get-width" since="3.0"/>
+    <keyword type="function" name="clutter_gst_box_get_height ()" link="clutter-gst-Types.html#clutter-gst-box-get-height" since="3.0"/>
+    <keyword type="enum" name="enum ClutterGstBufferingMode" link="clutter-gst-Types.html#ClutterGstBufferingMode" since="1.4"/>
+    <keyword type="enum" name="enum ClutterGstSeekFlags" link="clutter-gst-Types.html#ClutterGstSeekFlags" since="1.4"/>
+    <keyword type="struct" name="struct ClutterGstBox" link="clutter-gst-Types.html#ClutterGstBox-struct"/>
+    <keyword type="struct" name="struct ClutterGstFrame" link="clutter-gst-Types.html#ClutterGstFrame-struct"/>
+    <keyword type="struct" name="struct ClutterGstOverlay" link="clutter-gst-Types.html#ClutterGstOverlay-struct"/>
+    <keyword type="struct" name="struct ClutterGstOverlays" link="clutter-gst-Types.html#ClutterGstOverlays-struct"/>
+    <keyword type="struct" name="struct ClutterGstVideoResolution" link="clutter-gst-Types.html#ClutterGstVideoResolution" since="3.0"/>
+    <keyword type="function" name="clutter_gst_init ()" link="clutter-gst-Utilities.html#clutter-gst-init"/>
+    <keyword type="function" name="clutter_gst_init_with_args ()" link="clutter-gst-Utilities.html#clutter-gst-init-with-args" since="1.0"/>
+    <keyword type="function" name="clutter_gst_create_video_sink ()" link="clutter-gst-Utilities.html#clutter-gst-create-video-sink" since="3.0"/>
+    <keyword type="macro" name="CLUTTER_GST_MAJOR_VERSION" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-MAJOR-VERSION:CAPS"/>
+    <keyword type="macro" name="CLUTTER_GST_MINOR_VERSION" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-MINOR-VERSION:CAPS"/>
+    <keyword type="macro" name="CLUTTER_GST_MICRO_VERSION" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-MICRO-VERSION:CAPS"/>
+    <keyword type="macro" name="CLUTTER_GST_VERSION" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-VERSION:CAPS"/>
+    <keyword type="macro" name="CLUTTER_GST_VERSION_HEX" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-VERSION-HEX:CAPS"/>
+    <keyword type="macro" name="CLUTTER_GST_CHECK_VERSION()" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-CHECK-VERSION:CAPS"/>
+    <keyword type="macro" name="CLUTTER_GST_VERSION_S" link="clutter-gst-Versioning-Macros.html#CLUTTER-GST-VERSION-S:CAPS"/>
+  </functions>
+</book>

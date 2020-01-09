@@ -1,0 +1,621 @@
+clutter-gst 3.0.22 (06/12/2016)
+===============================================================================
+
+List of changes
+
+ o A couple of video sink fixes (crashes & not up-to-date data)
+
+ o A bunch of content fixes (crashes)
+
+Many Thanks to:
+
+   Fabrice Bellet
+
+clutter-gst 3.0.20 (08/09/2016)
+===============================================================================
+
+List of changes
+
+ o A bunch of build cleanups/improvments
+
+ o Fix BT.2020 YUV to RGB conversion
+
+Many Thanks to:
+
+   Emmanuele Bassi
+   Sebastian Keller
+
+clutter-gst 3.0.18 (20/03/2016)
+===============================================================================
+
+List of changes
+
+ o More documentation fixes
+
+ o Set example video player background to opaque black
+
+Many Thanks to:
+
+   Chris Mayo
+   Jonny Lamb
+
+clutter-gst 3.0.16 (12/02/2016)
+===============================================================================
+
+List of changes
+
+ o Make gudev an optional dependency
+
+ o Bunch of documentation fixes
+
+ o Auto video sink memory leak fixes
+
+ o Auto video sink background now defaults to black
+
+ o Video sink caps RGBx/BGRx naming fix
+
+ o Video sink frame display fix on loaded systems
+
+ o Video sink cleanups on stop()
+
+Many Thanks to:
+
+   Chris Mayo
+   Gilles Dartiguelongue
+   Nicolas Dufresne
+
+clutter-gst 3.0.14 (10/10/2015)
+===============================================================================
+
+List of changes
+
+ o Fix rendering issue with non power of 2 video frame sizes
+
+ o Reduce color conversion shader's size
+
+ o Fix crash with vaapi plugins when frame upload fails
+
+clutter-gst 3.0.12 (30/09/2015)
+===============================================================================
+
+List of changes
+
+ o Fix leak with color balance
+
+ o Enable DVD events forwarding upstream the pipeline
+
+clutter-gst 3.0.10 (04/09/2015)
+===============================================================================
+
+List of changes
+
+ o Fix leak in error checking
+
+ o Fix invalid premultiply for AYUV format
+
+clutter-gst 3.0.8 (18/07/2015)
+===============================================================================
+
+List of changes
+
+ o Fix crash when video frame has not been uploaded yet, gets disposed
+   and Clutter try to paint with it.
+
+clutter-gst 3.0.6 (24/05/2015)
+===============================================================================
+
+List of changes
+
+ o fix memory leaks in get/set_caps
+
+ o advertize the GstVideoOverlayComposition feature in caps
+
+ o clear buffer in flush
+
+Many Thanks to:
+
+   Matthieu Bouron
+   Víctor Manuel Jáquez Leal
+   Wim Taymans
+
+clutter-gst 3.0.4 (24/01/2015)
+===============================================================================
+
+List of changes
+
+ o Fix introspection problem on systems with no display
+
+ o Fix introspection problems with clutter-gst 2.0 installed
+
+ o Fix incorrect warnings about deprecated properties
+
+ o Only advertise RGBA format for texture upload
+
+clutter-gst 3.0.2 (11/01/2015)
+===============================================================================
+
+List of changes
+
+ o Fix dependency version of Gstreamer and Cogl
+
+ o Fix crash with the autovideosink when you're running without a
+   display server
+
+ o Fix linking problem with examples
+
+Many Thanks to:
+
+   Koop Mast
+   Ting-Wei Lan
+
+clutter-gst 3.0.0 (06/12/2014)
+===============================================================================
+
+List of changes
+
+ o Add ability to set modified frames on content
+
+ o Add RGBx/BGRx format support to video sink
+
+ o A few small bug fixes
+
+Many Thanks to:
+
+   Olav Vitters
+   Philip Withnall
+
+clutter-gst 2.99.4 (26/06/2014)
+===============================================================================
+
+List of changes
+
+ o Improve GStreamer debug topics
+
+ o A few small bug fixes
+
+clutter-gst 2.99.2 (09/06/2014)
+===============================================================================
+
+List of changes
+
+ o Add color correction support using GLSL shaders
+
+ o Add overlay support using additional ClutterPaintNode
+
+ o Video sink now derives from GstVideoSink
+
+Many Thanks to:
+
+   Colin Walters
+   Ryan Lortie
+   Piotr Drąg
+
+clutter-gst 2.99.0 (19/11/2013)
+===============================================================================
+
+List of changes
+
+ o Split the concept of player from the concept of video display in
+   the Clutter scenegraph (ie. you can now display the same or part of
+   the same video stream several times in a one or multiple Clutter
+   scenes)
+
+   You should start by creating a Player that is in charge of decoding
+   a video (ClutterGstPlayer interface).
+
+   2 player classes are currently available :
+     ClutterGstPlayback (wrapper around playbin)
+     ClutterGstCamera (wrapper around camerabin)
+
+   You then attach a player to one of the ClutterGstContent, and put
+   the content into a ClutterActor anywhere in a scene.
+
+ o Introduce ClutterGstPlayer interface as a replacement for
+   ClutterMedia
+
+ o Introduce ClutterGstCameraManager to discover/list available camera
+   on the system
+
+ o Remove usage of Clutter and Cogl deprecated APIs
+
+ o Add many example to help with usage of the new API, including
+   JavaScript examples (see examples/ directory).
+
+ o Rework a basic GStreamer plugin
+
+
+Many Thanks to:
+
+   Andre Moreira Magalhaes
+   Bastian Winkler
+   Bastien Nocera
+   Marvin Schmidt
+   Sjoerd Simons
+
+clutter-gst 2.0.2 (26/02/2013)
+===============================================================================
+
+List of changes since 2.0.0
+
+ o Remove usage of ClutterStage/ClutterContainer deprecated APIs
+
+ o Depend on Cogl 1.10 for shaders boilerplate
+
+ o Improve video-player player example on enter/leave event handling
+
+clutter-gst 2.0.0 (22/01/2013)
+===============================================================================
+
+List of changes since 1.9.92
+
+ o Fix a bug a autocluttersink that would lead to playbin not considering it as
+   a sink any more when removing the actual sink from the bin
+
+ o Small build and deprecation fixes
+
+Many Thanks to:
+
+    Nuno Araujo
+    Hans-Christian Ebke
+    Javier Jardón
+    Nirbheek Chauhan
+
+clutter-gst 1.9.92 (26/09/2012)
+===============================================================================
+
+List of changes since 1.9.90
+
+ o Updated Gstreamer 1.0 port to work with the released GStreamer 1.0.0
+
+ o Fix uploading of some videos with odd widths
+
+ o Disable HW decoder support until it is stabilized in GStreamer 1.0
+
+ o autocluttersink now exposes the ts-offset property of the underlying sink
+
+Many Thanks to:
+
+   Edward Hervey
+   Andre Moreira Magalhaes (andrunko)
+   Josep Torra
+   Tim-Philipp Müller
+
+clutter-gst 1.9.90 (22/08/2012)
+===============================================================================
+
+List of changes since 1.6.0
+
+ o Port to GStreamer 1.0
+
+ o Fix navigation support in the standalone plugin
+
+Many Thanks to:
+
+    Edward Hervey
+    Tim-Philipp Müller
+    Bastien Nocera
+    Nicolas Dufresne
+    Sjoerd Simons
+
+clutter-gst 1.6.0 (25/06/2012)
+===============================================================================
+
+List of changes since 1.5.6
+
+ o None. This stable release is the same as 1.5.6.
+
+clutter-gst 1.5.6 (25/05/2012)
+===============================================================================
+
+List of changes since 1.5.4
+
+ o Fix play/pause of autocluttersink,
+
+ o Add a "in-seek" property to the player to be notified when the pipeline
+   is seeking,
+
+ o Various build and smaller fixes.
+
+Many Thanks to:
+
+    Josep Torra
+    Tomas Frydrych
+    Adrian Bunk
+    Lionel Landwerlin
+    Michael Wood
+
+clutter-gst 1.5.4 (23/02/2012)
+===============================================================================
+
+List of changes since 1.5.2
+
+ o Fix compilation with cogl 1.9.x
+
+clutter-gst 1.5.2 (25/01/2012)
+===============================================================================
+
+List of changes since 1.4.2
+
+ o Add a standalone gstreamer plugin. Clutter-gst gstreamer elements are now
+   available just like any other GStreamer elements, that includes working with
+   gst-launch.
+
+ o Add support for video/x-surface ("hardware" surfaces) that can be converted
+   to opengl textures. (Requires -bad 0.10.22.1)
+
+ o Addition of a new element, autocluttersink, a bin that picks up clutter-
+   compatible sinks automatically. This allows an eco-system of 3rd party
+   decoders and (clutter) sinks to be autoplugged.
+
+ o Various small fixes
+
+Many Thanks to:
+
+    Nicolas Dufresne
+    Josep Torra
+    Lionel Landwerlin
+    Neil Roberts
+    Colin Walters
+    Laurent Bigonville
+    Thomas Wood
+
+clutter-gst 1.4.2 (03/10/2011)
+===============================================================================
+
+List of changes since 1.4.0
+
+ o Fix an embarassing bug that was leading to crashes when uploading RGB
+   textures (https://bugzilla.gnome.org/show_bug.cgi?id=660732)
+
+ o Don't try to free NULL GstTagLists
+
+Many thanks to:
+
+    György Balló
+
+clutter-gst 1.4.0 (30/09/2011)
+===============================================================================
+
+List of changes since 1.3.14
+
+ o Refinement of the subtitles and audio tracks API. clutter-gst now gives
+   the full GstTagList to the application
+
+ o Made the internal test player a bit more usable
+
+ o A number of fixes around automatic loading of external subtitles files
+
+Many thanks to:
+
+   Lionel Landwerlin
+   Thomas Wood
+
+clutter-gst 1.3.14 (31/08/2011)
+===============================================================================
+
+List of changes since 1.3.12
+
+  o Big split between the logic around playbin2 and the clutter-specific part
+    to be able to reuse the GStreamer logic to implement new ClutterMedia
+    objects.
+
+  o Add new API to get the list of audio and subtitles tracks
+
+  o Fix the leak of GstBus in VideoTexture
+
+  o Fix the key navigation events in the sink
+
+Many thanks to:
+
+    Lionel Landwerlin
+    Bastian Winkler
+    Dinh Bowman
+    Thomas Wood
+
+clutter-gst 1.3.12 (06/06/2011)
+===============================================================================
+
+List of changes since 1.3.10:
+
+  o Fix set_uri() with recent versions of GStreamer,
+
+  o Some warning fixes with newer versions of Clutter
+
+Many thanks to:
+
+    Øyvind Kolås
+    Bastien Nocera
+
+clutter-gst 1.3.10 (09/05/2011)
+===============================================================================
+
+List of changes since 1.3.8:
+
+  o Fix the GstNavigation interface of the sink
+
+Many thanks to:
+
+    Bastien Nocera
+
+clutter-gst 1.3.8 (05/04/2011)
+===============================================================================
+
+List of changes since 1.3.6:
+
+  o Implementation of the GstNavigation interface in the sink,
+
+  o Initial support of download buffering (opt in),
+
+  o Series of cleanups in VideoTexture (subtitles reset when changing URI,
+    state management, seek behaviour, ...)
+
+  o The audio volume suffered from an hilariously bad bug that multiplied
+    the volume set by 10. Took the opportunity to use GStreamer's
+    StreamVolume to expose a cubic volume,
+
+  o Compilation fixes for Windows.
+
+Many thanks to:
+
+    Lionel Landwerlin
+    Bastien Nocera
+
+clutter-gst 1.3.6 (02/03/2011)
+===============================================================================
+
+  * list of changes since 1.3.4
+
+    o Make looping possible with set_playing(TRUE) in the the EOS callback
+
+    o set_uri(NULL) is now handled and defined to stop the pipeline and set
+      the video texture in "idle mode" (painted with the idle material)
+
+clutter-gst 1.3.4 (10/01/2011)
+===============================================================================
+
+  * list of changes since 1.3.2
+
+    o An API addition: set_seek_flags() on the VideoTexture for a finer control
+      on how you can seek (fast or accurate),
+
+    o Fix the notification of "progress" so it does not advertise 0 when
+      seeking,
+
+    o Fix the AYUV to RGBA shader.
+
+Many thanks to:
+
+  Chris Lord
+  Evan Nemerson
+  JuanZhao
+  Samuel Degrande
+
+clutter-gst 1.3.2 (20/09/2010)
+===============================================================================
+
+  * list of changes since 1.2.0
+
+    o Respects the pixel-aspect-ratio property of the video frames and have
+      VideoTexture advertise the right preferred size.
+
+    o Reworked how ARB fp programs are set on the materials using a clutter 1.4
+      feature to set a program on a material, fixing the way materials were
+      used along the way.
+
+    o Removed all raw GL code and only use Cogl.
+
+Many thanks to:
+
+  Robert Bragg
+
+clutter-gst 1.2.0 (18/08/2010)
+===============================================================================
+
+  * list of changes since 1.0.0
+
+    o Supports the ClutterMedia subtitle-related properties introduced in
+      1.2.0.
+
+    o Added a "idle material" to VideoTexture, a material that will be used
+      to paint the texture when not playing any video.
+
+    o You can now set a user-agent when streaming videos.
+
+    o The usual bulk of small fixes, small memory leaks, build (builds on
+      GLES2 now), don't use deprecated symbols, ...
+
+Many thanks to:
+
+  Chris Lord
+  Frederik Zipp
+  Gwenole Beauchesne
+  Samuel Degrande
+
+clutter-gst 1.0.0 (09/02/2010)
+===============================================================================
+
+  * list of changes since 0.10.0
+
+    o Uses the playbin2 GStreamer element.
+
+    o Autoloads subtitle files when they have the same name than the video
+      being played and are in the same directory.
+
+    o GObject introspection support.
+
+    o Added a new clutter_gst_init_with_arg() symbol, changed *get_playbin()
+      to a more generic *get_pipeline()
+
+    o A lot of small bug fixes and code clean up.
+
+Many thanks to:
+
+  Bastian Winkler
+  Ole André Vadla Ravnås
+  Roland Peffer
+
+clutter-gst 0.10.0 (29/07/2009)
+===============================================================================
+
+  * list of changes since 0.9.0
+
+    o Requires stable Clutter 1.0.0
+
+clutter-gst 0.9.0 (24/07/2009)
+===============================================================================
+
+  * list of changes since 0.8.0
+
+    o Requires clutter 0.9.6.
+
+    o Added support for ARB fp 1.0 shaders when available.
+
+    o Added support for YUV I420 to RBG colorspacing.
+
+    o Removed the 'use-shaders' property on ClutterGstVideoSink. The sink
+      detects itself what the underlying GL implementation supports and
+      negotiates capabilities based on what it has found.
+
+Many thanks to:
+
+  Arjan van de Ven
+  Emmanuele Bassi
+  Haakon Sporsheim
+  Neil Roberts
+  Ole André Vadla Ravnås
+  Robert Bragg
+  Øyvind Kolås
+
+clutter-gst 0.8.0
+=================
+* List of changes:
+  o Require Clutter stable release
+  o Add clutter_gst_audio_get_playbin () function
+  o Add support for 24-bit textures
+  o Add pixel-shader AYUV/YV12 support via 'use-shaders' property on
+    ClutterGstVideoSink
+
+clutter-gst 0.6.1
+=================
+* List of changes:
+  o Fix the generation of the pkg-config file
+
+clutter-gst 0.6.0
+=================
+* List of changes:
+  o Require Clutter stable release.
+
+clutter-gst 0.5.0
+=================
+* List of changes:
+  o Full documentation
+
+* List of bug fixed:
+  o #644 - Use an asynch queue [Zeeshan Ali Khattak]
+
+clutter-gst 0.1.1
+=================
+
+Critical bug fixes;
+ - #242 memory leak when playing videos
+ - #219 clutter-gst apps won't compile with clutter 0.2

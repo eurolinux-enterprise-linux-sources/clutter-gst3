@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Clutter Gst 3.0.22
+ Reference Manual: ClutterGstContent</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Clutter Gst 3.0.22 Reference Manual">
+<link rel="up" href="ch02.html" title="Clutter content objects">
+<link rel="prev" href="ch02.html" title="Clutter content objects">
+<link rel="next" href="ClutterGstAspectratio.html" title="ClutterGstAspectratio">
+<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ClutterGstContent.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ClutterGstContent.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#ClutterGstContent.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ClutterGstContent.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ClutterGstContent.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch02.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ClutterGstAspectratio.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ClutterGstContent"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ClutterGstContent.top_of_page"></a>ClutterGstContent</span></h2>
+<p>ClutterGstContent — A <span class="type">ClutterContent</span> for displaying video frames.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ClutterGstContent.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">ClutterContent</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstContent.html#clutter-gst-content-new" title="clutter_gst_content_new ()">clutter_gst_content_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">ClutterContent</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstContent.html#clutter-gst-content-new-with-sink" title="clutter_gst_content_new_with_sink ()">clutter_gst_content_new_with_sink</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="returnvalue">ClutterGstFrame</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstContent.html#clutter-gst-content-get-frame" title="clutter_gst_content_get_frame ()">clutter_gst_content_get_frame</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="returnvalue">ClutterGstPlayer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstContent.html#clutter-gst-content-get-player" title="clutter_gst_content_get_player ()">clutter_gst_content_get_player</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="returnvalue">ClutterGstVideoSink</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstContent.html#clutter-gst-content-get-sink" title="clutter_gst_content_get_sink ()">clutter_gst_content_get_sink</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstContent.html#clutter-gst-content-set-frame" title="clutter_gst_content_set_frame ()">clutter_gst_content_set_frame</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstContent.html#clutter-gst-content-set-player" title="clutter_gst_content_set_player ()">clutter_gst_content_set_player</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstContent.html#clutter-gst-content-set-sink" title="clutter_gst_content_set_sink ()">clutter_gst_content_set_sink</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="clutter-gst-Types.html#ClutterGstOverlays"><span class="returnvalue">ClutterGstOverlays</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstContent.html#clutter-gst-content-get-overlays" title="clutter_gst_content_get_overlays ()">clutter_gst_content_get_overlays</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstContent.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> *</td>
+<td class="property_name"><a class="link" href="ClutterGstContent.html#ClutterGstContent--frame" title="The “frame” property">frame</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="ClutterGstContent.html#ClutterGstContent--paint-frame" title="The “paint-frame” property">paint-frame</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="ClutterGstContent.html#ClutterGstContent--paint-overlays" title="The “paint-overlays” property">paint-overlays</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">GObject</span> *</td>
+<td class="property_name"><a class="link" href="ClutterGstContent.html#ClutterGstContent--player" title="The “player” property">player</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *</td>
+<td class="property_name"><a class="link" href="ClutterGstContent.html#ClutterGstContent--sink" title="The “sink” property">sink</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstContent.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ClutterGstContent.html#ClutterGstContent-size-change" title="The “size-change” signal">size-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstContent.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ClutterGstContent.html#ClutterGstContent-struct" title="struct ClutterGstContent">ClutterGstContent</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ClutterGstContent.html#ClutterGstContentClass" title="struct ClutterGstContentClass">ClutterGstContentClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstContent.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> ClutterGstContent
+        <span class="lineart">├──</span> <a class="link" href="ClutterGstAspectratio.html" title="ClutterGstAspectratio">ClutterGstAspectratio</a>
+        <span class="lineart">╰──</span> <a class="link" href="ClutterGstCrop.html" title="ClutterGstCrop">ClutterGstCrop</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ClutterGstContent.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ClutterGstContent implements
+ ClutterContent.</p>
+</div>
+<div class="refsect1">
+<a name="ClutterGstContent.description"></a><h2>Description</h2>
+<p><a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> implements the <span class="type">ClutterContent</span> interface.</p>
+</div>
+<div class="refsect1">
+<a name="ClutterGstContent.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="clutter-gst-content-new"></a><h3>clutter_gst_content_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">ClutterContent</span> *
+clutter_gst_content_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.3.2.10.2.4"></a><h4>Returns</h4>
+<p> a new <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> instance. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-content-new-with-sink"></a><h3>clutter_gst_content_new_with_sink ()</h3>
+<pre class="programlisting"><span class="returnvalue">ClutterContent</span> *
+clutter_gst_content_new_with_sink (<em class="parameter"><code><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *sink</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.3.2.10.3.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sink</p></td>
+<td class="parameter_description"><p>A <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.10.3.5"></a><h4>Returns</h4>
+<p> a new <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> instance. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-content-get-frame"></a><h3>clutter_gst_content_get_frame ()</h3>
+<pre class="programlisting"><a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="returnvalue">ClutterGstFrame</span></a> *
+clutter_gst_content_get_frame (<em class="parameter"><code><a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.3.2.10.4.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.10.4.5"></a><h4>Returns</h4>
+<p> The <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> currently attached to <em class="parameter"><code>self</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-content-get-player"></a><h3>clutter_gst_content_get_player ()</h3>
+<pre class="programlisting"><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="returnvalue">ClutterGstPlayer</span></a> *
+clutter_gst_content_get_player (<em class="parameter"><code><a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.3.2.10.5.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.10.5.5"></a><h4>Returns</h4>
+<p> The <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> currently attached to <em class="parameter"><code>self</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-content-get-sink"></a><h3>clutter_gst_content_get_sink ()</h3>
+<pre class="programlisting"><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="returnvalue">ClutterGstVideoSink</span></a> *
+clutter_gst_content_get_sink (<em class="parameter"><code><a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.3.2.10.6.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.10.6.5"></a><h4>Returns</h4>
+<p> The <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> currently attached to <em class="parameter"><code>self</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-content-set-frame"></a><h3>clutter_gst_content_set_frame ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_content_set_frame (<em class="parameter"><code><a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> *self</code></em>,
+                               <em class="parameter"><code><a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> *frame</code></em>);</pre>
+<p>Set the current frame.</p>
+<div class="refsect3">
+<a name="id-1.3.2.10.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>frame</p></td>
+<td class="parameter_description"><p>A <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-content-set-player"></a><h3>clutter_gst_content_set_player ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_content_set_player (<em class="parameter"><code><a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *player</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.3.2.10.8.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> or <code class="literal">NULL</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-content-set-sink"></a><h3>clutter_gst_content_set_sink ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_content_set_sink (<em class="parameter"><code><a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> *self</code></em>,
+                              <em class="parameter"><code><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *sink</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.3.2.10.9.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sink</p></td>
+<td class="parameter_description"><p>A <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> or <code class="literal">NULL</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-content-get-overlays"></a><h3>clutter_gst_content_get_overlays ()</h3>
+<pre class="programlisting"><a class="link" href="clutter-gst-Types.html#ClutterGstOverlays"><span class="returnvalue">ClutterGstOverlays</span></a> *
+clutter_gst_content_get_overlays (<em class="parameter"><code><a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.3.2.10.10.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.2.10.10.5"></a><h4>Returns</h4>
+<p> The <a class="link" href="clutter-gst-Types.html#ClutterGstOverlays"><span class="type">ClutterGstOverlays</span></a> currently attached to <em class="parameter"><code>self</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstContent.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ClutterGstContent-struct"></a><h3>struct ClutterGstContent</h3>
+<pre class="programlisting">struct ClutterGstContent;</pre>
+<p>The <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> structure contains only private data
+and should be accessed using the provided API</p>
+<p class="since">Since 0.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstContentClass"></a><h3>struct ClutterGstContentClass</h3>
+<pre class="programlisting">struct ClutterGstContentClass {
+};
+</pre>
+<p>The <a class="link" href="ClutterGstContent.html#ClutterGstContentClass" title="struct ClutterGstContentClass"><span class="type">ClutterGstContentClass</span></a> structure contains only private data
+and should be accessed using the provided API</p>
+<p class="since">Since 0.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstContent.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ClutterGstContent--frame"></a><h3>The <code class="literal">“frame”</code> property</h3>
+<pre class="programlisting">  “frame”                    <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> *</pre>
+<p>ClutterGst Frame.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstContent--paint-frame"></a><h3>The <code class="literal">“paint-frame”</code> property</h3>
+<pre class="programlisting">  “paint-frame”              <span class="type">gboolean</span></pre>
+<p>Paint Frame.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstContent--paint-overlays"></a><h3>The <code class="literal">“paint-overlays”</code> property</h3>
+<pre class="programlisting">  “paint-overlays”           <span class="type">gboolean</span></pre>
+<p>Paint Video Overlays.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstContent--player"></a><h3>The <code class="literal">“player”</code> property</h3>
+<pre class="programlisting">  “player”                   <span class="type">GObject</span> *</pre>
+<p>ClutterGst Player.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstContent--sink"></a><h3>The <code class="literal">“sink”</code> property</h3>
+<pre class="programlisting">  “sink”                     <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *</pre>
+<p>Cogl Video Sink.</p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstContent.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ClutterGstContent-size-change"></a><h3>The <code class="literal">“size-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> *content,
+               <span class="type">gint</span>               width,
+               <span class="type">gint</span>               height,
+               <span class="type">gpointer</span>           user_data)</pre>
+<p>The ::size-change signal is emitted each time the video size changes.</p>
+<div class="refsect3">
+<a name="id-1.3.2.13.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>content</p></td>
+<td class="parameter_description"><p>the <a class="link" href="ClutterGstContent.html" title="ClutterGstContent"><span class="type">ClutterGstContent</span></a> instance that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>new width of the frames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>new height of the frames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21.1</div>
+</body>
+</html>

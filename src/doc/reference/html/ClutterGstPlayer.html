@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Clutter Gst 3.0.22
+ Reference Manual: ClutterGstPlayer</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Clutter Gst 3.0.22 Reference Manual">
+<link rel="up" href="ch03.html" title="ClutterGst players">
+<link rel="prev" href="ch03.html" title="ClutterGst players">
+<link rel="next" href="ClutterGstCamera.html" title="ClutterGstCamera">
+<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayer.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayer.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayer.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_implementations">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayer.implementations" class="shortcut">Known Implementations</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayer.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayer.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch03.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ClutterGstCamera.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ClutterGstPlayer"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ClutterGstPlayer.top_of_page"></a>ClutterGstPlayer</span></h2>
+<p>ClutterGstPlayer — An interface for controlling playback of media data</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="returnvalue">ClutterGstFrame</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayer.html#clutter-gst-player-get-frame" title="clutter_gst_player_get_frame ()">clutter_gst_player_get_frame</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GstElement</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayer.html#clutter-gst-player-get-pipeline" title="clutter_gst_player_get_pipeline ()">clutter_gst_player_get_pipeline</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="returnvalue">ClutterGstVideoSink</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayer.html#clutter-gst-player-get-video-sink" title="clutter_gst_player_get_video_sink ()">clutter_gst_player_get_video_sink</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayer.html#clutter-gst-player-get-idle" title="clutter_gst_player_get_idle ()">clutter_gst_player_get_idle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayer.html#clutter-gst-player-get-playing" title="clutter_gst_player_get_playing ()">clutter_gst_player_get_playing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayer.html#clutter-gst-player-set-playing" title="clutter_gst_player_set_playing ()">clutter_gst_player_set_playing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayer.html#clutter-gst-player-get-audio-volume" title="clutter_gst_player_get_audio_volume ()">clutter_gst_player_get_audio_volume</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayer.html#clutter-gst-player-set-audio-volume" title="clutter_gst_player_set_audio_volume ()">clutter_gst_player_set_audio_volume</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><span class="type">gdouble</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer--audio-volume" title="The “audio-volume” property">audio-volume</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer--idle" title="The “idle” property">idle</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer--playing" title="The “playing” property">playing</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-eos" title="The “eos” signal">eos</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-error" title="The “error” signal">error</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-new-frame" title="The “new-frame” signal">new-frame</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-ready" title="The “ready” signal">ready</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-size-change" title="The “size-change” signal">size-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-struct" title="ClutterGstPlayer">ClutterGstPlayer</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ClutterGstPlayer.html#ClutterGstPlayerIface" title="struct ClutterGstPlayerIface">ClutterGstPlayerIface</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GInterface
+    <span class="lineart">╰──</span> ClutterGstPlayer
+</pre>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+ClutterGstPlayer requires
+ GObject.</p>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.implementations"></a><h2>Known Implementations</h2>
+<p>
+ClutterGstPlayer is implemented by
+ <a class="link" href="ClutterGstCamera.html" title="ClutterGstCamera">ClutterGstCamera</a> and  <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback">ClutterGstPlayback</a>.</p>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.description"></a><h2>Description</h2>
+<p><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> is an interface for controlling playback of media
+ sources.</p>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="clutter-gst-player-get-frame"></a><h3>clutter_gst_player_get_frame ()</h3>
+<pre class="programlisting"><a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="returnvalue">ClutterGstFrame</span></a> *
+clutter_gst_player_get_frame (<em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *self</code></em>);</pre>
+<p>Retrieves the <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> of the last frame produced by <em class="parameter"><code>self</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.2.11.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.2.11.2.6"></a><h4>Returns</h4>
+<p> the <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> of the last frame. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-player-get-pipeline"></a><h3>clutter_gst_player_get_pipeline ()</h3>
+<pre class="programlisting"><span class="returnvalue">GstElement</span> *
+clutter_gst_player_get_pipeline (<em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *self</code></em>);</pre>
+<p>Retrieves the <span class="type">GstPipeline</span> used by the <em class="parameter"><code>self</code></em>
+, for direct use with
+GStreamer API.</p>
+<div class="refsect3">
+<a name="id-1.4.2.11.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.2.11.3.6"></a><h4>Returns</h4>
+<p> the <span class="type">GstPipeline</span> element used by the player. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-player-get-video-sink"></a><h3>clutter_gst_player_get_video_sink ()</h3>
+<pre class="programlisting"><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="returnvalue">ClutterGstVideoSink</span></a> *
+clutter_gst_player_get_video_sink (<em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *self</code></em>);</pre>
+<p>Retrieves the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> used by the <em class="parameter"><code>self</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.2.11.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.2.11.4.6"></a><h4>Returns</h4>
+<p> the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> element used by the player. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-player-get-idle"></a><h3>clutter_gst_player_get_idle ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+clutter_gst_player_get_idle (<em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *self</code></em>);</pre>
+<p>Get the idle state of the pipeline.</p>
+<div class="refsect3">
+<a name="id-1.4.2.11.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.2.11.5.6"></a><h4>Returns</h4>
+<p> TRUE if the pipline is in idle mode, FALSE otherwise.</p>
+<p></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-player-get-playing"></a><h3>clutter_gst_player_get_playing ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+clutter_gst_player_get_playing (<em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *self</code></em>);</pre>
+<p>Retrieves the playing status of <em class="parameter"><code>self</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.2.11.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.2.11.6.6"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> if playing, <code class="literal">FALSE</code> if stopped.</p>
+<p></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-player-set-playing"></a><h3>clutter_gst_player_set_playing ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_player_set_playing (<em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *self</code></em>,
+                                <em class="parameter"><code><span class="type">gboolean</span> playing</code></em>);</pre>
+<p>Starts or stops playing of <em class="parameter"><code>self</code></em>
+.</p>
+<p>The implementation might be asynchronous, so the way to know whether
+the actual playing state of the <em class="parameter"><code>self</code></em>
+ is to use the <span class="type">“notify”</span>
+signal on the <a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer--playing" title="The “playing” property"><span class="type">“playing”</span></a> property and then retrieve the
+current state with <a class="link" href="ClutterGstPlayer.html#clutter-gst-player-get-playing" title="clutter_gst_player_get_playing ()"><code class="function">clutter_gst_player_get_playing()</code></a>. ClutterGstVideoActor
+in clutter-gst is an example of such an asynchronous implementation.</p>
+<div class="refsect3">
+<a name="id-1.4.2.11.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>playing</p></td>
+<td class="parameter_description"><p><code class="literal">TRUE</code> to start playing</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-player-get-audio-volume"></a><h3>clutter_gst_player_get_audio_volume ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+clutter_gst_player_get_audio_volume (<em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *self</code></em>);</pre>
+<p>Retrieves the playback volume of <em class="parameter"><code>self</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.2.11.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.2.11.8.6"></a><h4>Returns</h4>
+<p> The playback volume between 0.0 and 1.0</p>
+<p></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-player-set-audio-volume"></a><h3>clutter_gst_player_set_audio_volume ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_player_set_audio_volume (<em class="parameter"><code><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *self</code></em>,
+                                     <em class="parameter"><code><span class="type">gdouble</span> volume</code></em>);</pre>
+<p>Sets the playback volume of <em class="parameter"><code>self</code></em>
+ to <em class="parameter"><code>volume</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.2.11.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>volume</p></td>
+<td class="parameter_description"><p>the volume as a double between 0.0 and 1.0</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ClutterGstPlayer-struct"></a><h3>ClutterGstPlayer</h3>
+<pre class="programlisting">typedef struct _ClutterGstPlayer ClutterGstPlayer;</pre>
+<p><a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> is an opaque structure whose members cannot be
+directly accessed</p>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayerIface"></a><h3>struct ClutterGstPlayerIface</h3>
+<pre class="programlisting">struct ClutterGstPlayerIface {
+  ClutterGstFrame     *(* get_frame)        (ClutterGstPlayer *self);
+  GstElement *         (* get_pipeline)     (ClutterGstPlayer *self);
+  ClutterGstVideoSink *(* get_video_sink)   (ClutterGstPlayer *self);
+
+  gboolean             (* get_idle)         (ClutterGstPlayer *self);
+
+  gdouble              (* get_audio_volume) (ClutterGstPlayer *self);
+  void                 (* set_audio_volume) (ClutterGstPlayer *self,
+                                             gdouble           volume);
+
+  gboolean             (* get_playing)      (ClutterGstPlayer *self);
+  void                 (* set_playing)      (ClutterGstPlayer *self,
+                                             gboolean          playing);
+
+  /* signals */
+  void (* new_frame)           (ClutterGstPlayer *self, ClutterGstFrame *frame);
+  void (* ready)               (ClutterGstPlayer *self);
+  void (* eos)                 (ClutterGstPlayer *self);
+  void (* error)               (ClutterGstPlayer *self,
+                                const GError     *error);
+  void (* size_change)         (ClutterGstPlayer *self,
+                                gint              width,
+                                gint              height);
+};
+</pre>
+<p>Interface vtable for <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> implementations</p>
+<div class="refsect3">
+<a name="id-1.4.2.12.3.5"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.get-frame"></a>get_frame</code></em> ()</p></td>
+<td class="struct_member_description"><p>virtual function; returns the current visible frame</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.get-pipeline"></a>get_pipeline</code></em> ()</p></td>
+<td class="struct_member_description"><p>virtual function; returns the current GStreamer pipeline</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.get-video-sink"></a>get_video_sink</code></em> ()</p></td>
+<td class="struct_member_description"><p>virtual function; returns the current ClutterGst video sink</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.get-idle"></a>get_idle</code></em> ()</p></td>
+<td class="struct_member_description"><p>virtual function; returns whether the player is currently in idle state</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.get-audio-volume"></a>get_audio_volume</code></em> ()</p></td>
+<td class="struct_member_description"><p>virtual function; returns the current audio volume</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.set-audio-volume"></a>set_audio_volume</code></em> ()</p></td>
+<td class="struct_member_description"><p>virtual function; sets the audio volume</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.get-playing"></a>get_playing</code></em> ()</p></td>
+<td class="struct_member_description"><p>virtual function; returns whether the player is currently playing</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.set-playing"></a>set_playing</code></em> ()</p></td>
+<td class="struct_member_description"><p>virtual function; starts or stops the player from playing</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.new-frame"></a>new_frame</code></em> ()</p></td>
+<td class="struct_member_description"><p>signal class closure for <a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-new-frame" title="The “new-frame” signal"><span class="type">“new-frame”</span></a></p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.ready"></a>ready</code></em> ()</p></td>
+<td class="struct_member_description"><p>signal class closure for <a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-ready" title="The “ready” signal"><span class="type">“ready”</span></a></p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.eos"></a>eos</code></em> ()</p></td>
+<td class="struct_member_description"><p>signal class closure for <a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-eos" title="The “eos” signal"><span class="type">“eos”</span></a></p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.error"></a>error</code></em> ()</p></td>
+<td class="struct_member_description"><p>signal class closure for <a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-error" title="The “error” signal"><span class="type">“error”</span></a></p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstPlayerIface.size-change"></a>size_change</code></em> ()</p></td>
+<td class="struct_member_description"><p>signal class closure for <a class="link" href="ClutterGstPlayer.html#ClutterGstPlayer-size-change" title="The “size-change” signal"><span class="type">“size-change”</span></a></p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ClutterGstPlayer--audio-volume"></a><h3>The <code class="literal">“audio-volume”</code> property</h3>
+<pre class="programlisting">  “audio-volume”             <span class="type">gdouble</span></pre>
+<p>The volume of the audio, as a normalized value between
+0.0 and 1.0.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayer--idle"></a><h3>The <code class="literal">“idle”</code> property</h3>
+<pre class="programlisting">  “idle”                     <span class="type">gboolean</span></pre>
+<p>Whether the <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> is in idle mode.</p>
+<p>Flags: Read</p>
+<p>Default value: TRUE</p>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayer--playing"></a><h3>The <code class="literal">“playing”</code> property</h3>
+<pre class="programlisting">  “playing”                  <span class="type">gboolean</span></pre>
+<p>Whether the <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> actor is playing.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayer.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ClutterGstPlayer-eos"></a><h3>The <code class="literal">“eos”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *player,
+               <span class="type">gpointer</span>          user_data)</pre>
+<p>The ::eos signal is emitted each time the media stream ends.</p>
+<div class="refsect3">
+<a name="id-1.4.2.14.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>the <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> instance that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayer-error"></a><h3>The <code class="literal">“error”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *player,
+               <span class="type">GError</span>           *error,
+               <span class="type">gpointer</span>          user_data)</pre>
+<p>The ::error signal is emitted each time an error occurred.</p>
+<div class="refsect3">
+<a name="id-1.4.2.14.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>the <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> instance that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>the <span class="type">GError</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayer-new-frame"></a><h3>The <code class="literal">“new-frame”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *player,
+               <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a>  *frame,
+               <span class="type">gpointer</span>          user_data)</pre>
+<p>The ::new-frame signal is emitted each time a frame is received
+from the video sink.</p>
+<div class="refsect3">
+<a name="id-1.4.2.14.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>the <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> instance that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>frame</p></td>
+<td class="parameter_description"><p>the <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> newly received from the video sink</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayer-ready"></a><h3>The <code class="literal">“ready”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *player,
+               <span class="type">gpointer</span>          user_data)</pre>
+<p>The ::ready signal is emitted each time the gstreamer pipeline
+becomes ready.</p>
+<div class="refsect3">
+<a name="id-1.4.2.14.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>the <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> instance that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayer-size-change"></a><h3>The <code class="literal">“size-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> *player,
+               <span class="type">gint</span>              width,
+               <span class="type">gint</span>              height,
+               <span class="type">gpointer</span>          user_data)</pre>
+<p>The ::size-change signal is emitted each time the new frame
+has different dimensions to the previous frame.</p>
+<div class="refsect3">
+<a name="id-1.4.2.14.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>the <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a> instance that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>new width of the frames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>new height of the frames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21.1</div>
+</body>
+</html>

@@ -1,0 +1,1559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Clutter Gst 3.0.22
+ Reference Manual: ClutterGstPlayback</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Clutter Gst 3.0.22 Reference Manual">
+<link rel="up" href="ch03.html" title="ClutterGst players">
+<link rel="prev" href="ClutterGstCameraManager.html" title="ClutterGstCameraManager">
+<link rel="next" href="ch04.html" title="ClutterGst sink">
+<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayback.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayback.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayback.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayback.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ClutterGstPlayback.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ClutterGstCameraManager.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ch04.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ClutterGstPlayback"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ClutterGstPlayback.top_of_page"></a>ClutterGstPlayback</span></h2>
+<p>ClutterGstPlayback — A <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> to play media streams</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="returnvalue">ClutterGstPlayback</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-new" title="clutter_gst_playback_new ()">clutter_gst_playback_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-audio-stream" title="clutter_gst_playback_get_audio_stream ()">clutter_gst_playback_get_audio_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GList</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-audio-streams" title="clutter_gst_playback_get_audio_streams ()">clutter_gst_playback_get_audio_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint64</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-buffer-duration" title="clutter_gst_playback_get_buffer_duration ()">clutter_gst_playback_get_buffer_duration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-buffer-fill" title="clutter_gst_playback_get_buffer_fill ()">clutter_gst_playback_get_buffer_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="clutter-gst-Types.html#ClutterGstBufferingMode" title="enum ClutterGstBufferingMode"><span class="returnvalue">ClutterGstBufferingMode</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-buffering-mode" title="clutter_gst_playback_get_buffering_mode ()">clutter_gst_playback_get_buffering_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-buffer-size" title="clutter_gst_playback_get_buffer_size ()">clutter_gst_playback_get_buffer_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-duration" title="clutter_gst_playback_get_duration ()">clutter_gst_playback_get_duration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-in-seek" title="clutter_gst_playback_get_in_seek ()">clutter_gst_playback_get_in_seek</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-position" title="clutter_gst_playback_get_position ()">clutter_gst_playback_get_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-progress" title="clutter_gst_playback_get_progress ()">clutter_gst_playback_get_progress</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="clutter-gst-Types.html#ClutterGstSeekFlags" title="enum ClutterGstSeekFlags"><span class="returnvalue">ClutterGstSeekFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-seek-flags" title="clutter_gst_playback_get_seek_flags ()">clutter_gst_playback_get_seek_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-font-name" title="clutter_gst_playback_get_subtitle_font_name ()">clutter_gst_playback_get_subtitle_font_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-track" title="clutter_gst_playback_get_subtitle_track ()">clutter_gst_playback_get_subtitle_track</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GList</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-tracks" title="clutter_gst_playback_get_subtitle_tracks ()">clutter_gst_playback_get_subtitle_tracks</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-uri" title="clutter_gst_playback_get_subtitle_uri ()">clutter_gst_playback_get_subtitle_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-uri" title="clutter_gst_playback_get_uri ()">clutter_gst_playback_get_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-user-agent" title="clutter_gst_playback_get_user_agent ()">clutter_gst_playback_get_user_agent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-is-live-media" title="clutter_gst_playback_is_live_media ()">clutter_gst_playback_is_live_media</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-audio-stream" title="clutter_gst_playback_set_audio_stream ()">clutter_gst_playback_set_audio_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-buffer-duration" title="clutter_gst_playback_set_buffer_duration ()">clutter_gst_playback_set_buffer_duration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-buffering-mode" title="clutter_gst_playback_set_buffering_mode ()">clutter_gst_playback_set_buffering_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-buffer-size" title="clutter_gst_playback_set_buffer_size ()">clutter_gst_playback_set_buffer_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-filename" title="clutter_gst_playback_set_filename ()">clutter_gst_playback_set_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-progress" title="clutter_gst_playback_set_progress ()">clutter_gst_playback_set_progress</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-seek-flags" title="clutter_gst_playback_set_seek_flags ()">clutter_gst_playback_set_seek_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-subtitle-font-name" title="clutter_gst_playback_set_subtitle_font_name ()">clutter_gst_playback_set_subtitle_font_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-subtitle-track" title="clutter_gst_playback_set_subtitle_track ()">clutter_gst_playback_set_subtitle_track</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-subtitle-uri" title="clutter_gst_playback_set_subtitle_uri ()">clutter_gst_playback_set_subtitle_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-uri" title="clutter_gst_playback_set_uri ()">clutter_gst_playback_set_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-set-user-agent" title="clutter_gst_playback_set_user_agent ()">clutter_gst_playback_set_user_agent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><span class="type">gint</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--audio-stream" title="The “audio-stream” property">audio-stream</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gpointer</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--audio-streams" title="The “audio-streams” property">audio-streams</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gdouble</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--buffer-fill" title="The “buffer-fill” property">buffer-fill</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--can-seek" title="The “can-seek” property">can-seek</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gdouble</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--duration" title="The “duration” property">duration</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--in-seek" title="The “in-seek” property">in-seek</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gdouble</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--progress" title="The “progress” property">progress</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="clutter-gst-Types.html#ClutterGstSeekFlags" title="enum ClutterGstSeekFlags"><span class="type">ClutterGstSeekFlags</span></a></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--seek-flags" title="The “seek-flags” property">seek-flags</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--subtitle-font-name" title="The “subtitle-font-name” property">subtitle-font-name</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gint</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--subtitle-track" title="The “subtitle-track” property">subtitle-track</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gpointer</span></td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--subtitle-tracks" title="The “subtitle-tracks” property">subtitle-tracks</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--subtitle-uri" title="The “subtitle-uri” property">subtitle-uri</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--uri" title="The “uri” property">uri</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback--user-agent" title="The “user-agent” property">user-agent</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">gboolean</span></td>
+<td class="signal_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback-should-buffer" title="The “should-buffer” signal">should-buffer</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlayback-struct" title="struct ClutterGstPlayback">ClutterGstPlayback</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ClutterGstPlayback.html#ClutterGstPlaybackClass" title="struct ClutterGstPlaybackClass">ClutterGstPlaybackClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> ClutterGstPlayback
+</pre>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ClutterGstPlayback implements
+ <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer">ClutterGstPlayer</a>.</p>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.description"></a><h2>Description</h2>
+<p><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> implements <a class="link" href="ClutterGstPlayer.html" title="ClutterGstPlayer"><span class="type">ClutterGstPlayer</span></a>.</p>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="clutter-gst-playback-new"></a><h3>clutter_gst_playback_new ()</h3>
+<pre class="programlisting"><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="returnvalue">ClutterGstPlayback</span></a> *
+clutter_gst_playback_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-audio-stream"></a><h3>clutter_gst_playback_get_audio_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+clutter_gst_playback_get_audio_stream (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Get the current audio stream. The number returned in the index of the
+audio stream playing in the list returned by
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-audio-streams" title="clutter_gst_playback_get_audio_streams ()"><code class="function">clutter_gst_playback_get_audio_streams()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.3.6"></a><h4>Returns</h4>
+<p> the index of the current audio stream, -1 if the media has no
+audio stream</p>
+<p></p>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-audio-streams"></a><h3>clutter_gst_playback_get_audio_streams ()</h3>
+<pre class="programlisting"><span class="returnvalue">GList</span> *
+clutter_gst_playback_get_audio_streams
+                               (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Get the list of audio streams of the current media.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.4.6"></a><h4>Returns</h4>
+<p> a list of
+strings describing the available audio streams. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> utf8]</span></p>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-buffer-duration"></a><h3>clutter_gst_playback_get_buffer_duration ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint64</span>
+clutter_gst_playback_get_buffer_duration
+                               (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Retrieves the buffer duration when buffering network streams.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.5.6"></a><h4>Returns</h4>
+<p> The buffer duration</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-buffer-fill"></a><h3>clutter_gst_playback_get_buffer_fill ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+clutter_gst_playback_get_buffer_fill (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Retrieves the amount of the stream that is buffered.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.6.6"></a><h4>Returns</h4>
+<p> the fill level, between 0.0 and 1.0</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-buffering-mode"></a><h3>clutter_gst_playback_get_buffering_mode ()</h3>
+<pre class="programlisting"><a class="link" href="clutter-gst-Types.html#ClutterGstBufferingMode" title="enum ClutterGstBufferingMode"><span class="returnvalue">ClutterGstBufferingMode</span></a>
+clutter_gst_playback_get_buffering_mode
+                               (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.4.6.10.7.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.7.5"></a><h4>Returns</h4>
+<p> a <a class="link" href="clutter-gst-Types.html#ClutterGstBufferingMode" title="enum ClutterGstBufferingMode"><span class="type">ClutterGstBufferingMode</span></a></p>
+<p></p>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-buffer-size"></a><h3>clutter_gst_playback_get_buffer_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+clutter_gst_playback_get_buffer_size (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Retrieves the buffer size when buffering network streams.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.8.6"></a><h4>Returns</h4>
+<p> The buffer size</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-duration"></a><h3>clutter_gst_playback_get_duration ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+clutter_gst_playback_get_duration (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Retrieves the duration of the media stream that <em class="parameter"><code>self</code></em>
+ represents.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.9.6"></a><h4>Returns</h4>
+<p> the duration of the media stream, in seconds</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-in-seek"></a><h3>clutter_gst_playback_get_in_seek ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+clutter_gst_playback_get_in_seek (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Whether the player is seeking.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.10.6"></a><h4>Returns</h4>
+<p> TRUE if the player is seeking, FALSE otherwise.</p>
+<p></p>
+</div>
+<p class="since">Since 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-position"></a><h3>clutter_gst_playback_get_position ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+clutter_gst_playback_get_position (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Retrieves the position in the media stream that <em class="parameter"><code>self</code></em>
+ represents.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.11.6"></a><h4>Returns</h4>
+<p> the position in the media stream, in seconds</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-progress"></a><h3>clutter_gst_playback_get_progress ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+clutter_gst_playback_get_progress (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Retrieves the playback progress of <em class="parameter"><code>self</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.12.6"></a><h4>Returns</h4>
+<p> the playback progress, between 0.0 and 1.0</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-seek-flags"></a><h3>clutter_gst_playback_get_seek_flags ()</h3>
+<pre class="programlisting"><a class="link" href="clutter-gst-Types.html#ClutterGstSeekFlags" title="enum ClutterGstSeekFlags"><span class="returnvalue">ClutterGstSeekFlags</span></a>
+clutter_gst_playback_get_seek_flags (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Get the current value of the seek-flags property.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.13.6"></a><h4>Returns</h4>
+<p> a combination of <a class="link" href="clutter-gst-Types.html#ClutterGstSeekFlags" title="enum ClutterGstSeekFlags"><span class="type">ClutterGstSeekFlags</span></a></p>
+<p></p>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-subtitle-font-name"></a><h3>clutter_gst_playback_get_subtitle_font_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+clutter_gst_playback_get_subtitle_font_name
+                               (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Retrieves the font name currently used.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.14.6"></a><h4>Returns</h4>
+<p> a string containing the font name. Use <code class="function">g_free()</code>
+to free the returned string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-subtitle-track"></a><h3>clutter_gst_playback_get_subtitle_track ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+clutter_gst_playback_get_subtitle_track
+                               (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Get the current subtitles track. The number returned is the index of the
+subtiles track in the list returned by
+<a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-tracks" title="clutter_gst_playback_get_subtitle_tracks ()"><code class="function">clutter_gst_playback_get_subtitle_tracks()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.15.6"></a><h4>Returns</h4>
+<p> the index of the current subtitlest track, -1 if the media has
+no subtitles track or if the subtitles have been turned off</p>
+<p></p>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-subtitle-tracks"></a><h3>clutter_gst_playback_get_subtitle_tracks ()</h3>
+<pre class="programlisting"><span class="returnvalue">GList</span> *
+clutter_gst_playback_get_subtitle_tracks
+                               (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Get the list of subtitles tracks of the current media.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.16.6"></a><h4>Returns</h4>
+<p> a list of
+strings describing the available subtitles tracks. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> utf8]</span></p>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-subtitle-uri"></a><h3>clutter_gst_playback_get_subtitle_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+clutter_gst_playback_get_subtitle_uri (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Retrieves the URI of the subtitle file in use.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.17.6"></a><h4>Returns</h4>
+<p> the URI of the subtitle file. Use <code class="function">g_free()</code>
+to free the returned string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-uri"></a><h3>clutter_gst_playback_get_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+clutter_gst_playback_get_uri (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Retrieves the URI from <em class="parameter"><code>self</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.18.6"></a><h4>Returns</h4>
+<p> the URI of the media stream. Use <code class="function">g_free()</code>
+to free the returned string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-get-user-agent"></a><h3>clutter_gst_playback_get_user_agent ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+clutter_gst_playback_get_user_agent (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Retrieves the user agent used when streaming.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.19.6"></a><h4>Returns</h4>
+<p> the user agent used. The returned string has to be freed with
+<code class="function">g_free()</code></p>
+<p></p>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-is-live-media"></a><h3>clutter_gst_playback_is_live_media ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+clutter_gst_playback_is_live_media (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>);</pre>
+<p>Whether the player is using a live media.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.6.10.20.6"></a><h4>Returns</h4>
+<p> TRUE if the player is using a live media, FALSE otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-audio-stream"></a><h3>clutter_gst_playback_set_audio_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_audio_stream (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                       <em class="parameter"><code><span class="type">gint</span> index_</code></em>);</pre>
+<p>Set the audio stream to play. <em class="parameter"><code>index_</code></em>
+ is the index of the stream
+in the list returned by <a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-audio-streams" title="clutter_gst_playback_get_audio_streams ()"><code class="function">clutter_gst_playback_get_audio_streams()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index_</p></td>
+<td class="parameter_description"><p>the index of the audio stream</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-buffer-duration"></a><h3>clutter_gst_playback_set_buffer_duration ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_buffer_duration
+                               (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                <em class="parameter"><code><span class="type">gint64</span> duration</code></em>);</pre>
+<p>Sets the buffer duration to be used when buffering network streams.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>duration</p></td>
+<td class="parameter_description"><p>The new duration</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-buffering-mode"></a><h3>clutter_gst_playback_set_buffering_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_buffering_mode
+                               (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="clutter-gst-Types.html#ClutterGstBufferingMode" title="enum ClutterGstBufferingMode"><span class="type">ClutterGstBufferingMode</span></a> mode</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.4.6.10.23.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>a <a class="link" href="clutter-gst-Types.html#ClutterGstBufferingMode" title="enum ClutterGstBufferingMode"><span class="type">ClutterGstBufferingMode</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-buffer-size"></a><h3>clutter_gst_playback_set_buffer_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_buffer_size (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                      <em class="parameter"><code><span class="type">gint</span> size</code></em>);</pre>
+<p>Sets the buffer size to be used when buffering network streams.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.24.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The new size</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-filename"></a><h3>clutter_gst_playback_set_filename ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_filename (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                   <em class="parameter"><code>const <span class="type">gchar</span> *filename</code></em>);</pre>
+<p>Sets the source of <em class="parameter"><code>self</code></em>
+ using a file path.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A filename</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-progress"></a><h3>clutter_gst_playback_set_progress ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_progress (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                   <em class="parameter"><code><span class="type">gdouble</span> progress</code></em>);</pre>
+<p>Sets the playback progress of <em class="parameter"><code>self</code></em>
+. The <em class="parameter"><code>progress</code></em>
+ is
+a normalized value between 0.0 (begin) and 1.0 (end).</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.26.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>progress</p></td>
+<td class="parameter_description"><p>the progress of the playback, between 0.0 and 1.0</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-seek-flags"></a><h3>clutter_gst_playback_set_seek_flags ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_seek_flags (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                     <em class="parameter"><code><a class="link" href="clutter-gst-Types.html#ClutterGstSeekFlags" title="enum ClutterGstSeekFlags"><span class="type">ClutterGstSeekFlags</span></a> flags</code></em>);</pre>
+<p>Seeking can be done with several trade-offs. Clutter-gst defaults
+to <a class="link" href="clutter-gst-Types.html#CLUTTER-GST-SEEK-FLAG-NONE:CAPS"><code class="literal">CLUTTER_GST_SEEK_FLAG_NONE</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.27.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>a combination of <a class="link" href="clutter-gst-Types.html#ClutterGstSeekFlags" title="enum ClutterGstSeekFlags"><span class="type">ClutterGstSeekFlags</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-subtitle-font-name"></a><h3>clutter_gst_playback_set_subtitle_font_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_subtitle_font_name
+                               (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *font_name</code></em>);</pre>
+<p>Sets the font used by the subtitle renderer. The <em class="parameter"><code>font_name</code></em>
+ string must be
+either <code class="literal">NULL</code>, which means that the default font name of the underlying
+implementation will be used; or must follow the grammar recognized by
+<code class="function">pango_font_description_from_string()</code> like:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="function"><a href="ClutterGstPlayback.html#clutter-gst-playback-set-subtitle-font-name">clutter_gst_playback_set_subtitle_font_name</a></span> <span class="gtkdoc opt">(</span>player<span class="gtkdoc opt">,</span> <span class="string">&quot;Sans 24pt&quot;</span><span class="gtkdoc opt">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<div class="refsect3">
+<a name="id-1.4.6.10.28.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>font_name</p></td>
+<td class="parameter_description"><p>a font name, or <code class="literal">NULL</code> to set the default font name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-subtitle-track"></a><h3>clutter_gst_playback_set_subtitle_track ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_subtitle_track
+                               (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> index_</code></em>);</pre>
+<p>Set the subtitles track to play. <em class="parameter"><code>index_</code></em>
+ is the index of the stream
+in the list returned by <a class="link" href="ClutterGstPlayback.html#clutter-gst-playback-get-subtitle-tracks" title="clutter_gst_playback_get_subtitle_tracks ()"><code class="function">clutter_gst_playback_get_subtitle_tracks()</code></a>.</p>
+<p>If <em class="parameter"><code>index_</code></em>
+ is -1, the subtitles are turned off.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.29.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index_</p></td>
+<td class="parameter_description"><p>the index of the subtitles track</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-subtitle-uri"></a><h3>clutter_gst_playback_set_subtitle_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_subtitle_uri (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                       <em class="parameter"><code>const <span class="type">gchar</span> *uri</code></em>);</pre>
+<p>Sets the location of a subtitle file to display while playing <em class="parameter"><code>self</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.30.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>the URI of a subtitle file</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-uri"></a><h3>clutter_gst_playback_set_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_uri (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                              <em class="parameter"><code>const <span class="type">gchar</span> *uri</code></em>);</pre>
+<p>Sets the URI of <em class="parameter"><code>self</code></em>
+ to <em class="parameter"><code>uri</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.31.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>the URI of the media stream</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-playback-set-user-agent"></a><h3>clutter_gst_playback_set_user_agent ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_playback_set_user_agent (<em class="parameter"><code><a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *self</code></em>,
+                                     <em class="parameter"><code>const <span class="type">gchar</span> *user_agent</code></em>);</pre>
+<p>Sets the user agent to use when streaming.</p>
+<p>When streaming content, you might want to set a custom user agent, eg. to
+promote your software, make it appear in statistics or because the server
+requires a special user agent you want to impersonate.</p>
+<div class="refsect3">
+<a name="id-1.4.6.10.32.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_agent</p></td>
+<td class="parameter_description"><p>the user agent</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 1.4</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ClutterGstPlayback-struct"></a><h3>struct ClutterGstPlayback</h3>
+<pre class="programlisting">struct ClutterGstPlayback;</pre>
+<p>Implementation of <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> that displays media streams
+using GStreamer.</p>
+<p>The <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> structure contains only private data and
+should not be accessed directly.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlaybackClass"></a><h3>struct ClutterGstPlaybackClass</h3>
+<pre class="programlisting">struct ClutterGstPlaybackClass {
+  /* signals */
+  gboolean (* should_buffer)  (ClutterGstPlayback *self,
+                                GstQuery *query);
+};
+</pre>
+<p>Base class for <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a>.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ClutterGstPlayback--audio-stream"></a><h3>The <code class="literal">“audio-stream”</code> property</h3>
+<pre class="programlisting">  “audio-stream”             <span class="type">gint</span></pre>
+<p>Index of the current audio stream.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= -1</p>
+<p>Default value: -1</p>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--audio-streams"></a><h3>The <code class="literal">“audio-streams”</code> property</h3>
+<pre class="programlisting">  “audio-streams”            <span class="type">gpointer</span></pre>
+<p>List of audio streams available on the current media.</p>
+<p>Flags: Read</p>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--buffer-fill"></a><h3>The <code class="literal">“buffer-fill”</code> property</h3>
+<pre class="programlisting">  “buffer-fill”              <span class="type">gdouble</span></pre>
+<p>The fill level of the buffer for the current stream,
+as a value between 0.0 and 1.0.</p>
+<p>Flags: Read</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--can-seek"></a><h3>The <code class="literal">“can-seek”</code> property</h3>
+<pre class="programlisting">  “can-seek”                 <span class="type">gboolean</span></pre>
+<p>Whether the current stream is seekable.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--duration"></a><h3>The <code class="literal">“duration”</code> property</h3>
+<pre class="programlisting">  “duration”                 <span class="type">gdouble</span></pre>
+<p>The duration of the current stream, in seconds</p>
+<p>Flags: Read</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--in-seek"></a><h3>The <code class="literal">“in-seek”</code> property</h3>
+<pre class="programlisting">  “in-seek”                  <span class="type">gboolean</span></pre>
+<p>Whether or not the stream is being seeked.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+<p class="since">Since 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--progress"></a><h3>The <code class="literal">“progress”</code> property</h3>
+<pre class="programlisting">  “progress”                 <span class="type">gdouble</span></pre>
+<p>The current progress of the playback, as a normalized
+value between 0.0 and 1.0.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--seek-flags"></a><h3>The <code class="literal">“seek-flags”</code> property</h3>
+<pre class="programlisting">  “seek-flags”               <a class="link" href="clutter-gst-Types.html#ClutterGstSeekFlags" title="enum ClutterGstSeekFlags"><span class="type">ClutterGstSeekFlags</span></a></pre>
+<p>Flags to use when seeking.</p>
+<p>Flags: Read / Write</p>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--subtitle-font-name"></a><h3>The <code class="literal">“subtitle-font-name”</code> property</h3>
+<pre class="programlisting">  “subtitle-font-name”       <span class="type">gchar</span> *</pre>
+<p>The font used to display subtitles. The font description has to
+follow the same grammar as the one recognized by
+<code class="function">pango_font_description_from_string()</code>.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--subtitle-track"></a><h3>The <code class="literal">“subtitle-track”</code> property</h3>
+<pre class="programlisting">  “subtitle-track”           <span class="type">gint</span></pre>
+<p>Current subtitle track being displayed.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= -1</p>
+<p>Default value: -1</p>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--subtitle-tracks"></a><h3>The <code class="literal">“subtitle-tracks”</code> property</h3>
+<pre class="programlisting">  “subtitle-tracks”          <span class="type">gpointer</span></pre>
+<p>List of subtitle tracks available.</p>
+<p>Flags: Read</p>
+<p class="since">Since 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--subtitle-uri"></a><h3>The <code class="literal">“subtitle-uri”</code> property</h3>
+<pre class="programlisting">  “subtitle-uri”             <span class="type">gchar</span> *</pre>
+<p>The location of a subtitle file, expressed as a valid URI.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--uri"></a><h3>The <code class="literal">“uri”</code> property</h3>
+<pre class="programlisting">  “uri”                      <span class="type">gchar</span> *</pre>
+<p>The location of a media file, expressed as a valid URI.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstPlayback--user-agent"></a><h3>The <code class="literal">“user-agent”</code> property</h3>
+<pre class="programlisting">  “user-agent”               <span class="type">gchar</span> *</pre>
+<p>The User Agent used by <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> with network protocols.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since 1.4</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstPlayback.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ClutterGstPlayback-should-buffer"></a><h3>The <code class="literal">“should-buffer”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+user_function (<a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> *player,
+               <span class="type">GstQuery</span>           *query,
+               <span class="type">gpointer</span>            user_data)</pre>
+<p>The ::should-buffer signal is emitted every time the base class needs to
+decide whether it should continue buffering in download-buffering mode.</p>
+<div class="refsect3">
+<a name="id-1.4.6.13.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>the <a class="link" href="ClutterGstPlayback.html" title="ClutterGstPlayback"><span class="type">ClutterGstPlayback</span></a> instance that received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>query</p></td>
+<td class="parameter_description"><p>A gst buffering query of format bytes</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+<p class="since">Since 1.4</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21.1</div>
+</body>
+</html>

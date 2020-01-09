@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Clutter Gst 3.0.22
+ Reference Manual: Video Sink</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Clutter Gst 3.0.22 Reference Manual">
+<link rel="up" href="ch04.html" title="ClutterGst sink">
+<link rel="prev" href="ch04.html" title="ClutterGst sink">
+<link rel="next" href="ch05.html" title="ClutterGst utils">
+<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#clutter-gst-Video-Sink.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#clutter-gst-Video-Sink.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#clutter-gst-Video-Sink.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#clutter-gst-Video-Sink.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#clutter-gst-Video-Sink.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch04.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch04.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ch05.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="clutter-gst-Video-Sink"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="clutter-gst-Video-Sink.top_of_page"></a>Video Sink</span></h2>
+<p>Video Sink — A video sink for integrating a GStreamer
+  pipeline with a Cogl pipeline.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="clutter-gst-Video-Sink.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="returnvalue">ClutterGstVideoSink</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-new" title="clutter_gst_video_sink_new ()">clutter_gst_video_sink_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-is-ready" title="clutter_gst_video_sink_is_ready ()">clutter_gst_video_sink_is_ready</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="returnvalue">ClutterGstFrame</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-frame" title="clutter_gst_video_sink_get_frame ()">clutter_gst_video_sink_get_frame</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">CoglPipeline</span> *
+</td>
+<td class="function_name">
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-pipeline" title="clutter_gst_video_sink_get_pipeline ()">clutter_gst_video_sink_get_pipeline</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-setup-pipeline" title="clutter_gst_video_sink_setup_pipeline ()">clutter_gst_video_sink_setup_pipeline</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="clutter-gst-Types.html#ClutterGstOverlays"><span class="returnvalue">ClutterGstOverlays</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-overlays" title="clutter_gst_video_sink_get_overlays ()">clutter_gst_video_sink_get_overlays</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="clutter-gst-Video-Sink.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><span class="type">gint</span></td>
+<td class="property_name"><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink--update-priority" title="The “update-priority” property">update-priority</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="clutter-gst-Video-Sink.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-new-frame" title="The “new-frame” signal">new-frame</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-new-overlays" title="The “new-overlays” signal">new-overlays</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-pipeline-ready" title="The “pipeline-ready” signal">pipeline-ready</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="ClutterGstVideoSink"></a><div class="refsect1">
+<a name="clutter-gst-Video-Sink.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-struct" title="struct ClutterGstVideoSink">ClutterGstVideoSink</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSinkClass" title="struct ClutterGstVideoSinkClass">ClutterGstVideoSinkClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="clutter-gst-Video-Sink.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
+        <span class="lineart">╰──</span> GstObject
+            <span class="lineart">╰──</span> GstElement
+                <span class="lineart">╰──</span> GstBaseSink
+                    <span class="lineart">╰──</span> GstVideoSink
+                        <span class="lineart">╰──</span> ClutterGstVideoSink
+</pre>
+</div>
+<div class="refsect1">
+<a name="clutter-gst-Video-Sink.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+ClutterGstVideoSink implements
+ GstColorBalance and  GstNavigation.</p>
+</div>
+<div class="refsect1">
+<a name="clutter-gst-Video-Sink.description"></a><h2>Description</h2>
+<p><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> is a subclass of <span class="type">GstBaseSink</span> which can be used to
+create a <span class="type">CoglPipeline</span> for rendering the frames of the video.</p>
+<p>To create a basic video player, an application can create a
+<span class="type">GstPipeline</span> as normal using <code class="function">gst_pipeline_new()</code> and set the
+sink on it to one created with <a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-new" title="clutter_gst_video_sink_new ()"><code class="function">clutter_gst_video_sink_new()</code></a>. The
+application can then listen for the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-new-frame" title="The “new-frame” signal"><span class="type">“new-frame”</span></a>
+signal which will be emitted whenever there are new textures ready
+for rendering. For simple rendering, the application can just call
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-pipeline" title="clutter_gst_video_sink_get_pipeline ()"><code class="function">clutter_gst_video_sink_get_pipeline()</code></a> in the signal handler and use
+the returned pipeline to paint the new frame.</p>
+<p>An application is also free to do more advanced rendering by
+customizing the pipeline. In that case it should listen for the
+<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-pipeline-ready" title="The “pipeline-ready” signal"><span class="type">“pipeline-ready”</span></a> signal which will be emitted as
+soon as the sink has determined enough information about the video
+to know how it should be rendered. In the handler for this signal,
+the application can either make modifications to a copy of the
+pipeline returned by <a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-pipeline" title="clutter_gst_video_sink_get_pipeline ()"><code class="function">clutter_gst_video_sink_get_pipeline()</code></a> or it can
+create its own pipeline from scratch and ask the sink to configure
+it with <a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-setup-pipeline" title="clutter_gst_video_sink_setup_pipeline ()"><code class="function">clutter_gst_video_sink_setup_pipeline()</code></a>. If a custom pipeline
+is created using one of these methods then the application should
+call <code class="function">clutter_gst_video_sink_attach_frame()</code> on the pipeline before
+rendering in order to update the textures on the pipeline's layers.</p>
+<p>If the <code class="literal">COGL_FEATURE_ID_GLSL</code> feature is available then the pipeline
+used by the sink will have a shader snippet with a function in it
+called clutter_gst_sample_video0 which takes a single vec2 argument.
+This can be used by custom snippets set the by the application to
+sample from the video. The vec2 argument represents the normalised
+coordinates within the video. The function returns a vec4
+containing a pre-multiplied RGBA color of the pixel within the
+video.</p>
+</div>
+<div class="refsect1">
+<a name="clutter-gst-Video-Sink.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="clutter-gst-video-sink-new"></a><h3>clutter_gst_video_sink_new ()</h3>
+<pre class="programlisting"><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="returnvalue">ClutterGstVideoSink</span></a> *
+clutter_gst_video_sink_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a></p>
+<div class="refsect3">
+<a name="id-1.5.2.11.2.5"></a><h4>Returns</h4>
+<p> a new <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-video-sink-is-ready"></a><h3>clutter_gst_video_sink_is_ready ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+clutter_gst_video_sink_is_ready (<em class="parameter"><code><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *sink</code></em>);</pre>
+<p>Returns whether the pipeline is ready and so
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-pipeline" title="clutter_gst_video_sink_get_pipeline ()"><code class="function">clutter_gst_video_sink_get_pipeline()</code></a> and
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-setup-pipeline" title="clutter_gst_video_sink_setup_pipeline ()"><code class="function">clutter_gst_video_sink_setup_pipeline()</code></a> can be called without causing error.</p>
+<p>Note: Normally an application will wait until the
+<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-pipeline-ready" title="The “pipeline-ready” signal"><span class="type">“pipeline-ready”</span></a> signal is emitted instead of
+polling the ready status with this api, but sometimes when a sink
+is passed between components that didn't have an opportunity to
+connect a signal handler this can be useful.</p>
+<div class="refsect3">
+<a name="id-1.5.2.11.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sink</p></td>
+<td class="parameter_description"><p>The <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.11.3.7"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> if the sink is ready, else <code class="literal">FALSE</code></p>
+<p></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-video-sink-get-frame"></a><h3>clutter_gst_video_sink_get_frame ()</h3>
+<pre class="programlisting"><a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="returnvalue">ClutterGstFrame</span></a> *
+clutter_gst_video_sink_get_frame (<em class="parameter"><code><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *sink</code></em>);</pre>
+<p>Returns a <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> object suitable to render the current
+frame of the given video sink. An application is free to make a
+copy of this pipeline and modify it for custom rendering.</p>
+<div class="refsect3">
+<a name="id-1.5.2.11.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sink</p></td>
+<td class="parameter_description"><p>The <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.11.4.6"></a><h4>Returns</h4>
+<p> A <a class="link" href="clutter-gst-Types.html#ClutterGstFrame"><span class="type">ClutterGstFrame</span></a> or NULL if there
+isn't a frame to be displayed yet. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-video-sink-get-pipeline"></a><h3>clutter_gst_video_sink_get_pipeline ()</h3>
+<pre class="programlisting"><span class="returnvalue">CoglPipeline</span> *
+clutter_gst_video_sink_get_pipeline (<em class="parameter"><code><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *sink</code></em>);</pre>
+<p>Returns a pipeline suitable for rendering the current frame of the
+given video sink. The pipeline will already have the textures for
+the frame attached. For simple rendering, an application will
+typically call this function immediately before it paints the
+video. It can then just paint a rectangle using the returned
+pipeline.</p>
+<p>An application is free to make a copy of this
+pipeline and modify it for custom rendering.</p>
+<p>Note: it is considered an error to call this function before the
+<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-pipeline-ready" title="The “pipeline-ready” signal"><span class="type">“pipeline-ready”</span></a> signal is emitted.</p>
+<div class="refsect3">
+<a name="id-1.5.2.11.5.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sink</p></td>
+<td class="parameter_description"><p>The <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.11.5.8"></a><h4>Returns</h4>
+<p> the pipeline for rendering the
+current frame. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-video-sink-setup-pipeline"></a><h3>clutter_gst_video_sink_setup_pipeline ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_video_sink_setup_pipeline (<em class="parameter"><code><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *sink</code></em>,
+                                       <em class="parameter"><code><span class="type">CoglPipeline</span> *pipeline</code></em>);</pre>
+<p>Configures the given pipeline so that will be able to render the
+video for the <em class="parameter"><code>sink</code></em>
+. This should only be used if the application
+wants to perform some custom rendering using its own pipeline.
+Typically an application will call this in response to the
+<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-pipeline-ready" title="The “pipeline-ready” signal"><span class="type">“pipeline-ready”</span></a> signal.</p>
+<p>Note: it is considered an error to call this function before the
+<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-pipeline-ready" title="The “pipeline-ready” signal"><span class="type">“pipeline-ready”</span></a> signal is emitted.</p>
+<div class="refsect3">
+<a name="id-1.5.2.11.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sink</p></td>
+<td class="parameter_description"><p>The <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pipeline</p></td>
+<td class="parameter_description"><p>A <span class="type">CoglPipeline</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-video-sink-get-overlays"></a><h3>clutter_gst_video_sink_get_overlays ()</h3>
+<pre class="programlisting"><a class="link" href="clutter-gst-Types.html#ClutterGstOverlays"><span class="returnvalue">ClutterGstOverlays</span></a> *
+clutter_gst_video_sink_get_overlays (<em class="parameter"><code><a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *sink</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.5.2.11.7.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="clutter-gst-Video-Sink.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ClutterGstVideoSink-struct"></a><h3>struct ClutterGstVideoSink</h3>
+<pre class="programlisting">struct ClutterGstVideoSink;</pre>
+<p>The <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> structure contains only private data and
+should be accessed using the provided API.</p>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstVideoSinkClass"></a><h3>struct ClutterGstVideoSinkClass</h3>
+<pre class="programlisting">struct ClutterGstVideoSinkClass {
+  void (* new_frame)      (ClutterGstVideoSink *sink);
+  void (* pipeline_ready) (ClutterGstVideoSink *sink);
+  void (* new_overlays)   (ClutterGstVideoSink *sink);
+};
+</pre>
+<div class="refsect3">
+<a name="id-1.5.2.12.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstVideoSinkClass.new-frame"></a>new_frame</code></em> ()</p></td>
+<td class="struct_member_description"><p>handler for the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-new-frame" title="The “new-frame” signal"><span class="type">“new-frame”</span></a> signal</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstVideoSinkClass.pipeline-ready"></a>pipeline_ready</code></em> ()</p></td>
+<td class="struct_member_description"><p>handler for the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-pipeline-ready" title="The “pipeline-ready” signal"><span class="type">“pipeline-ready”</span></a> signal</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="ClutterGstVideoSinkClass.new-overlays"></a>new_overlays</code></em> ()</p></td>
+<td class="struct_member_description"> </td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 3.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="clutter-gst-Video-Sink.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ClutterGstVideoSink--update-priority"></a><h3>The <code class="literal">“update-priority”</code> property</h3>
+<pre class="programlisting">  “update-priority”          <span class="type">gint</span></pre>
+<p>Priority of video updates in the thread.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= -2147483647</p>
+<p>Default value: 150</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="clutter-gst-Video-Sink.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ClutterGstVideoSink-new-frame"></a><h3>The <code class="literal">“new-frame”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *sink,
+               <span class="type">gpointer</span>             user_data)</pre>
+<p>The sink will emit this signal whenever there are new textures
+available for a new frame of the video. After this signal is
+emitted, an application can call <a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-pipeline" title="clutter_gst_video_sink_get_pipeline ()"><code class="function">clutter_gst_video_sink_get_pipeline()</code></a>
+to get a pipeline suitable for rendering the frame. If the
+application is using a custom pipeline it can alternatively call
+<code class="function">clutter_gst_video_sink_attach_frame()</code> to attach the textures.</p>
+<div class="refsect3">
+<a name="id-1.5.2.14.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sink</p></td>
+<td class="parameter_description"><p>the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstVideoSink-new-overlays"></a><h3>The <code class="literal">“new-overlays”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *sink,
+               <span class="type">gpointer</span>             user_data)</pre>
+<p>The sink will emit this signal whenever there are new textures
+available for set of overlays on the video. After this signal is
+emitted, an application can call
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-overlays" title="clutter_gst_video_sink_get_overlays ()"><code class="function">clutter_gst_video_sink_get_overlays()</code></a> to get a set of pipelines
+suitable for rendering overlays on a video frame.</p>
+<div class="refsect3">
+<a name="id-1.5.2.14.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sink</p></td>
+<td class="parameter_description"><p>the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+<p class="since">Since 3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstVideoSink-pipeline-ready"></a><h3>The <code class="literal">“pipeline-ready”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a> *sink,
+               <span class="type">gpointer</span>             user_data)</pre>
+<p>The sink will emit this signal as soon as it has gathered enough
+information from the video to configure a pipeline. If the
+application wants to do some customized rendering, it can setup its
+pipeline after this signal is emitted. The application's pipeline
+will typically either be a copy of the one returned by
+<a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-get-pipeline" title="clutter_gst_video_sink_get_pipeline ()"><code class="function">clutter_gst_video_sink_get_pipeline()</code></a> or it can be a completely custom
+pipeline which is setup using <a class="link" href="clutter-gst-Video-Sink.html#clutter-gst-video-sink-setup-pipeline" title="clutter_gst_video_sink_setup_pipeline ()"><code class="function">clutter_gst_video_sink_setup_pipeline()</code></a>.</p>
+<p>Note that it is an error to call either of those functions before
+this signal is emitted. The <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink-new-frame" title="The “new-frame” signal"><span class="type">“new-frame”</span></a> signal
+will only be emitted after the pipeline is ready so the application
+could also create its pipeline in the handler for that.</p>
+<div class="refsect3">
+<a name="id-1.5.2.14.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sink</p></td>
+<td class="parameter_description"><p>the <a class="link" href="clutter-gst-Video-Sink.html#ClutterGstVideoSink"><span class="type">ClutterGstVideoSink</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+<p class="since">Since 3.0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21.1</div>
+</body>
+</html>

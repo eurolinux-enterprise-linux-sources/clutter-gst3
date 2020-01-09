@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Clutter Gst 3.0.22
+ Reference Manual: ClutterGstCameraDevice</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Clutter Gst 3.0.22 Reference Manual">
+<link rel="up" href="ch03.html" title="ClutterGst players">
+<link rel="prev" href="ClutterGstCamera.html" title="ClutterGstCamera">
+<link rel="next" href="ClutterGstCameraManager.html" title="ClutterGstCameraManager">
+<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ClutterGstCameraDevice.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ClutterGstCameraDevice.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ClutterGstCameraDevice.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ClutterGstCameraDevice.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ClutterGstCamera.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ClutterGstCameraManager.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ClutterGstCameraDevice"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ClutterGstCameraDevice.top_of_page"></a>ClutterGstCameraDevice</span></h2>
+<p>ClutterGstCameraDevice — GObject representing a camera device using GStreamer.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ClutterGstCameraDevice.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstCameraDevice.html#clutter-gst-camera-device-get-capture-resolution" title="clutter_gst_camera_device_get_capture_resolution ()">clutter_gst_camera_device_get_capture_resolution</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstCameraDevice.html#clutter-gst-camera-device-get-name" title="clutter_gst_camera_device_get_name ()">clutter_gst_camera_device_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstCameraDevice.html#clutter-gst-camera-device-get-node" title="clutter_gst_camera_device_get_node ()">clutter_gst_camera_device_get_node</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">GPtrArray</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstCameraDevice.html#clutter-gst-camera-device-get-supported-resolutions" title="clutter_gst_camera_device_get_supported_resolutions ()">clutter_gst_camera_device_get_supported_resolutions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ClutterGstCameraDevice.html#clutter-gst-camera-device-set-capture-resolution" title="clutter_gst_camera_device_set_capture_resolution ()">clutter_gst_camera_device_set_capture_resolution</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstCameraDevice.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<span class="type">GstElementFactory</span> *</td>
+<td class="property_name"><a class="link" href="ClutterGstCameraDevice.html#ClutterGstCameraDevice--element-factory" title="The “element-factory” property">element-factory</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="ClutterGstCameraDevice.html#ClutterGstCameraDevice--name" title="The “name” property">name</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="ClutterGstCameraDevice.html#ClutterGstCameraDevice--node" title="The “node” property">node</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstCameraDevice.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ClutterGstCameraDevice.html#ClutterGstCameraDevice-capture-resolution-changed" title="The “capture-resolution-changed” signal">capture-resolution-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstCameraDevice.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ClutterGstCameraDevice.html#ClutterGstCameraDevice-struct" title="struct ClutterGstCameraDevice">ClutterGstCameraDevice</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="ClutterGstCameraDevice.html#ClutterGstCameraDeviceClass" title="struct ClutterGstCameraDeviceClass">ClutterGstCameraDeviceClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstCameraDevice.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> ClutterGstCameraDevice
+</pre>
+</div>
+<div class="refsect1">
+<a name="ClutterGstCameraDevice.description"></a><h2>Description</h2>
+<p><a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a> is a <span class="type">GObject</span> representing a camera device using GStreamer.</p>
+</div>
+<div class="refsect1">
+<a name="ClutterGstCameraDevice.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="clutter-gst-camera-device-get-capture-resolution"></a><h3>clutter_gst_camera_device_get_capture_resolution ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_camera_device_get_capture_resolution
+                               (<em class="parameter"><code><a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a> *device</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> *height</code></em>);</pre>
+<p>Retrieve the current capture resolution being used by <em class="parameter"><code>device</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.9.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p> Pointer to store the current capture resolution width. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p> Pointer to store the current capture resolution height. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-camera-device-get-name"></a><h3>clutter_gst_camera_device_get_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+clutter_gst_camera_device_get_name (<em class="parameter"><code><a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a> *device</code></em>);</pre>
+<p>Retrieve the name of the <em class="parameter"><code>device</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.9.3.6"></a><h4>Returns</h4>
+<p> the device name. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-camera-device-get-node"></a><h3>clutter_gst_camera_device_get_node ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+clutter_gst_camera_device_get_node (<em class="parameter"><code><a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a> *device</code></em>);</pre>
+<p>Retrieve the node (location) of the <em class="parameter"><code>device</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.9.4.6"></a><h4>Returns</h4>
+<p> the device node. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-camera-device-get-supported-resolutions"></a><h3>clutter_gst_camera_device_get_supported_resolutions ()</h3>
+<pre class="programlisting">const <span class="returnvalue">GPtrArray</span> *
+clutter_gst_camera_device_get_supported_resolutions
+                               (<em class="parameter"><code><a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a> *device</code></em>);</pre>
+<p>Retrieve the supported resolutions of the <em class="parameter"><code>device</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.9.5.6"></a><h4>Returns</h4>
+<p> an array of <a class="link" href="clutter-gst-Types.html#ClutterGstVideoResolution" title="struct ClutterGstVideoResolution"><span class="type">ClutterGstVideoResolution</span></a> with the
+supported resolutions. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ClutterGst.VideoResolution]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="clutter-gst-camera-device-set-capture-resolution"></a><h3>clutter_gst_camera_device_set_capture_resolution ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+clutter_gst_camera_device_set_capture_resolution
+                               (<em class="parameter"><code><a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a> *device</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
+<p>Set the capture resolution to be used by <em class="parameter"><code>device</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>a <a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The new capture resolution width to use</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The new capture resolution height to use</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstCameraDevice.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ClutterGstCameraDevice-struct"></a><h3>struct ClutterGstCameraDevice</h3>
+<pre class="programlisting">struct ClutterGstCameraDevice;</pre>
+<p>GObject representing a camera device using GStreamer.</p>
+<p>The <a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a> structure contains only private data and
+should not be accessed directly.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstCameraDeviceClass"></a><h3>struct ClutterGstCameraDeviceClass</h3>
+<pre class="programlisting">struct ClutterGstCameraDeviceClass {
+};
+</pre>
+<p>Base class for <a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a>.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstCameraDevice.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ClutterGstCameraDevice--element-factory"></a><h3>The <code class="literal">“element-factory”</code> property</h3>
+<pre class="programlisting">  “element-factory”          <span class="type">GstElementFactory</span> *</pre>
+<p>The GstElementFactory for this device.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstCameraDevice--name"></a><h3>The <code class="literal">“name”</code> property</h3>
+<pre class="programlisting">  “name”                     <span class="type">gchar</span> *</pre>
+<p>The device name.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ClutterGstCameraDevice--node"></a><h3>The <code class="literal">“node”</code> property</h3>
+<pre class="programlisting">  “node”                     <span class="type">gchar</span> *</pre>
+<p>The device node.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ClutterGstCameraDevice.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ClutterGstCameraDevice-capture-resolution-changed"></a><h3>The <code class="literal">“capture-resolution-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ClutterGstCameraDevice.html" title="ClutterGstCameraDevice"><span class="type">ClutterGstCameraDevice</span></a> *device,
+               <span class="type">gint</span>                    width,
+               <span class="type">gint</span>                    height,
+               <span class="type">gpointer</span>                user_data)</pre>
+<p>The ::capture-resolution-changed signal is emitted whenever the value of
+clutter_gst_camera_device_get_capture_resolution changes.</p>
+<div class="refsect3">
+<a name="id-1.4.4.12.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>device</p></td>
+<td class="parameter_description"><p>the device which received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The new width</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The new height</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21.1</div>
+</body>
+</html>
